@@ -41,10 +41,16 @@ More info on pull requests from a fork [can be found here](https://help.github.c
 If there are changes made to the original repository, you may want to keep up to date with them. From the command line, execute the following commands:
 
 - Create a remote connection to the original called `upstream`:
-```git remote add upstream git://github.com/team-humber-web-2019/humber-media-pros.git```
+```shell
+git remote add upstream git://github.com/team-humber-web-2019/humber-media-pros.git
+```
 
 - Identify all the branches from that `upstream` repo:
-```git fetch upstream```
+```shell
+git fetch upstream
+```
 
 - Specifically sync and merge into your current branch from the `upstream`'s `master` branch:
-```git pull upstream master```
+```shell
+git pull upstream master
+```
