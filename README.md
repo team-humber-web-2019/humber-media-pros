@@ -55,4 +55,4 @@ git fetch upstream
 git pull upstream master
 ```
 
-*Also note* If you updated your forked `master` and now want other branches to match up with master, you can  `rebase` them individually if you `checkout` that branch, then run: `git rebase master`
+**Also note:** If you updated your forked `master` and now want other branches to match up with master, you can  `rebase` them individually if you `checkout` that branch, then run: `git rebase master`
