@@ -27,7 +27,7 @@ This portion of the project will be assigned to the project portion of your fina
 3. Add the other two members to the group as contributors with "write" access.
 4. Meet with your group to discuss the objective, goals and how the interface will tackled. Decide on tasks for each member.
 5. Each member should clone to their desktop and will create a branch named after their first task and start working.
-6. Before running `gatsby develop`, be sure to run `npm install` from the project root folder to install the modules required for the application to your local computer (you must always do this with a project that has package dependencies)
+6. Before running `gatsby develop`, be sure to run `npm install` from the project root folder to install the modules required for the application to your local computer (you must always do this once after a clone when a project that has `package.json` dependencies because `node_modules` does not travel along with the project via the repo)
 7. The members will coordinate through Slack (or other) for 5 brief (15 min max) meetings to coordinate code, testing and delegation of tasks. Suggested times: Weds evening, Thurs evening, Friday afternoon, Friday evening, and Saturday early-afternoon, to discuss progress.
 8. Merge code into `master` when branches are tested and confirmed complete by all members.
 9. **Before 3pm Saturday (27th)**, all completed work must be merged into `master`, and also the appropriate pre-existing branch named after your group `prototype-home` (if `home` is your group's page).
