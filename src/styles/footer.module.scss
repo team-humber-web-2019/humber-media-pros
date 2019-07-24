@@ -1,0 +1,10 @@
+@import "variables";
+
+.footer {
+  background-color: $col-b;
+  color: $col-b-on;
+  padding: {
+    top: $space * 2;
+    bottom: $space * 2;
+  };
+}

@@ -1,0 +1,33 @@
+/******* SASS VARIABLE *******/
+
+// DO NOT USE THESE TWO WITHIN RULES, ONLY TO ASSIGN OTHER VARIABLES
+$LIGHT: #fff;
+$DARK: #1a1a1a;
+
+// VARIABLES TO USE FOR RULES:
+
+// Primary background and text
+$col-bg: $LIGHT;
+$col-bg-on: $DARK;
+// Error colours
+$col-err: rgb(230, 93, 69);
+$col-err-on: $DARK;
+
+// As per the design guide, the first colour is the "down" state, the second colour is the "up" state
+// Blue
+$col-a: #03188C; $col-b-on: $LIGHT;
+$col-b: #3E57C1; $col-b-on: $LIGHT;
+// Pink
+$col-c: #F307B4; $col-c-on: $LIGHT;
+$col-d: #EF7BD9; $col-d-on: $LIGHT;
+// Yellow
+$col-e: #FFEC5D; $col-e-on: $DARK;
+$col-f: #F9F2C7; $col-f-on: $DARK;
+// Monochrome
+$col-g: $DARK; $col-g-on: $LIGHT;
+$col-h: #BCBCBC; $col-h-on: $DARK;
+$col-i: #F2F2F2; $col-i-on: $DARK;
+
+
+$font-a: 'Lato', 'Open Sans', Helvetica, Arial, sans-serif;
+$space: 1em;
