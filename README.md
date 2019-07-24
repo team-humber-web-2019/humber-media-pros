@@ -40,7 +40,7 @@ More info on pull requests from a fork [can be found here](https://help.github.c
 
 If there are changes made to the original repository, you may want to keep up to date with them. From the command line, execute the following commands:
 
-- Create a remote connection to the original called `upstream`:
+- Create a remote connection to the original repository and nickname it `upstream`:
 ```shell
 git remote add upstream git://github.com/team-humber-web-2019/humber-media-pros.git
 ```
@@ -54,3 +54,5 @@ git fetch upstream
 ```shell
 git pull upstream master
 ```
+
+*Also note* If you updated your forked `master` and now want other branches to match up with master, you can  `rebase` them individually if you `checkout` that branch, then run: `git rebase master`
