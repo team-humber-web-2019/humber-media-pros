@@ -1,10 +1,10 @@
 # Humber Media Pros, Assignment Outline
 
 ## Groups
-*Home:* Ash, Arath, Nina
-*Program:* Sukhjeet, Carlos, Shojol
-*Class List:* Rupali, Sunmi, Patrick
-*Student:* Claude, Hari Krishna, Sunny
+- *Home:* Ash, Arath, Nina
+- *Program:* Sukhjeet, Carlos, Shojol
+- *Class List:* Rupali, Sunmi, Patrick
+- *Student:* Claude, Hari Krishna, Sunny
 
 ## Link
 https://github.com/team-humber-web-2019/humber-media-pros
