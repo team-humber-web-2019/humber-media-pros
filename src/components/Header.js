@@ -7,23 +7,23 @@ import style from "../styles/header.module.scss"
 const Header = () => {
   return (
     <header>
-      <nav class="navbar navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+      <nav className="navbar navbar-dark bg-dark">
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item">
               <Link className="nav-link" activeClassName="active" to="/">Home</Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <Link className="nav-link" activeClassName="active" to="/program">Class List</Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <Link className="nav-link" activeClassName="active" to="/class">Program</Link>
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <Link className="nav-link" activeClassName="active" to="/student">Student</Link>
             </li>
           </ul>
