@@ -29,7 +29,7 @@ const Header = () => {
           </ul>
         </div>
       </nav>
-      <h1 className="align-middle"><img src={humberLogoSvg} alt="Humber College" /> Humber Media Pros</h1>
+      {/* <h1 className="align-middle"><img src={humberLogoSvg} alt="Humber College" /> Humber Media Pros</h1> */}
     </header>
   )
 }
