@@ -6,7 +6,7 @@ import style from "../styles/footer.module.scss"
 const Footer = () => {
   return (
     <footer className={style.footer}>
-      <div class="container">
+      <div className="container">
         <p>&copy; Copyright {new Date().getFullYear()}, <a href="http://humbermediapros.ca">Humber Media Pros</a></p>
         <ul className="list-unstyled">
           <li className="list-inline-item"><Link to="/">Home</Link></li>
