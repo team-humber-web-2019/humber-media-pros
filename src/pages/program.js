@@ -1,19 +1,41 @@
 import React from "react"
 import Layout from "../components/Layout"
+import webBanner from "../images/web-banner.jpg"
+import htmlLogo from "../images/html-logo.png"
+import cssLogo from "../images/css-logo.png"
+import jsLogo from "../images/js-logo.png"
+import reactLogo from "../images/react-logo.png"
+import nodeLogo from "../images/node-logo.jpg"
 
 import style from "../styles/program.module.scss"
 
 const Program = () => {
   return (
     <Layout>
-      <h2>Web Design & Development</h2>
-      <p>This is the landing page for one of the three programs features at the show. Here would might have some kind of imagery, a description of the program, instructor names, course list, skills logos, etc.</p>
-      <p>Here are the three programs as they are featured on Humber's main website:</p>
-      <ul>
-        <li><a href="https://mediastudies.humber.ca/programs/web-design-and-development.html">Web Design and Development</a></li>
-        <li><a href="https://mediastudies.humber.ca/programs/3d.html">3D Modelling and Visual Effects Production</a></li>
-        <li><a href="https://mediastudies.humber.ca/programs/graphic-design-for-print-and-web.html">Graphic Design for Print and Web</a></li>
+      <div className={style.heroImg}><img src={webBanner} alt="Web design & development"/></div>
+      <h2 className={style.centerText}>Web Design & Development</h2>
+      <ul className="font-weight-bold">
+        <li>Credentials: Certificate of Achievement</li>
+        <li>Program Length: 2 Semesters</li>
       </ul>
+      <p>If you describe yourself as creative, resourceful, detail-oriented and a problem solver,
+         then Humber's Web Design and Development certificate program is for you. You will learn 
+         to critically analyze problems and apply best practices to plan, design and build websites/
+         applications. You will build sites and apps from ground up using the most up-to-date techniques
+         and fundamental technologies. You will also learn to tackle technical challenges by developing 
+         strong troubleshooting and problem solving skills. The works you create along your journey will 
+         be curated into a captivating portfolio website at the end of the program.</p>
+
+        <h2 className={style.centerText}>Skills</h2>
+         
+        <div className="row" className={style.formatRow}>
+          <img src={htmlLogo} alt="" className="col-md-2"/>
+          <img src={cssLogo} alt="" className="col-md-2" />
+          <img src={jsLogo} alt="" className="col-md-2" />
+          <img src={nodeLogo} alt="" className="col-md-2"/>
+          <img src={reactLogo} alt="" className="col-md-2"/>          
+        </div>
+
     </Layout>
   )
 }
