@@ -22,7 +22,7 @@ const Class = () => {
             <div id={style.studentimage}>
               <img src={profile}></img>
             </div>
-            <div className ={style.name}><p> BHAVANA NAVULURI</p></div>
+            <div className ={style.name}><p> Kyle  Brown</p></div>
           < div className ={style.jobtitle}><p>Front-End Developer</p></div>
           </li>
           <li className={style.student}>
@@ -30,28 +30,28 @@ const Class = () => {
               <img src={profile}></img>
             </div>
             <div className ={style.name}><p> BHAVANA NAVULURI</p></div>
-          < div className ={style.jobtitle}><p>Front-End Developer</p></div>
+          < div className ={style.jobtitle}><p>Back-End Developer</p></div>
           </li>
           <li className={style.student}>
             <div id={style.studentimage}>
               <img src={profile}></img>
             </div>
             <div className ={style.name}><p> BHAVANA NAVULURI</p></div>
-          < div className ={style.jobtitle}><p>Front-End Developer</p></div>
+          < div className ={style.jobtitle}><p>Full Stack Developer</p></div>
           </li>
           <li className={style.student}>
             <div id={style.studentimage}>
               <img src={profile}></img>
             </div>
             <div className ={style.name}><p> BHAVANA NAVULURI</p></div>
-          < div className ={style.jobtitle}><p>Front-End Developer</p></div>
+          < div className ={style.jobtitle}><p>Web Designer</p></div>
           </li>
           <li className={style.student}>
             <div id={style.studentimage}>
               <img src={profile}></img>
             </div>
             <div className ={style.name}><p> BHAVANA NAVULURI</p></div>
-          < div className ={style.jobtitle}><p>Front-End Developer</p></div>
+          < div className ={style.jobtitle}><p>UI and UI Design</p></div>
           </li>
           <li className={style.student}>
             <div id={style.studentimage}>

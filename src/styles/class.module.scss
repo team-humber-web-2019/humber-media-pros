@@ -8,8 +8,8 @@
 
 .studentlistcontainer {
   display:grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-column-gap:20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap:30px;
   grid-row-gap: 50px;
   padding:0;
 }
@@ -19,7 +19,7 @@
 }
 
 .student {
-  width:60%;
+  width:100%;
   // max-width:210px;
   height:100%;
   background-color:$col-a;
@@ -60,7 +60,7 @@
   color: white;
 }
 
-@media only screen and (min-width:700px) {
+@media only screen and (min-width:770px) {
 
   .studentlistcontainer {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
