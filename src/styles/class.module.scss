@@ -1,1 +1,73 @@
 @import "variables";
+
+
+.classlistcont {
+  margin-top:4em;
+  margin-bottom:4em;
+}
+
+.studentlistcontainer {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap:30px;
+  grid-row-gap: 50px;
+  padding:0;
+}
+
+.classlistdescription {
+  line-height:2em;
+}
+
+.student {
+  width:100%;
+  // max-width:210px;
+  height:100%;
+  background-color:$col-a;
+  list-style-type: none;
+  box-shadow: 8px 8px 18px -4px rgba(0,0,0,0.75);
+  margin:auto;
+}
+
+#studentimage {
+  width:100%;
+  // height:180px;
+  margin-bottom:1em;
+}
+
+#studentimage >img {
+  width:100%;
+  height:100%;
+}
+
+.name {
+  width:100%;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.name p {
+  color: white;
+}
+
+.jobtitle {
+  width:100%;
+  margin-bottom:2.5em;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.jobtitle p {
+  color: white;
+}
+
+@media only screen and (min-width:770px) {
+
+  .studentlistcontainer {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+  }
+
+  .student {
+    width:80%;
+  }
+}
