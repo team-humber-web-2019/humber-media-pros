@@ -133,13 +133,14 @@ const Student = () => {
           <h5 class="card-title">My Portfolio</h5>
           <p class="card-text">
             The Portfolio is conveying the quality and experiences of my
-            services.{" "}
+            services.
           </p>
           <a href="#" class="btn btn-primary">
             View my Porfolio
           </a>
         </div>
       </div>
+      <br />
       <div class="card-deck">
         <div class="card">
           <img src={Placeholder} class="card-img-top" alt="Placeholder image" />
