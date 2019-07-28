@@ -2,7 +2,7 @@ import React from "react"
 import Header from "./Header"
 import Footer from "./Footer"
 
-//import "../styles/reset.scss"  // Not needed with Bootstrap
+import "../styles/reset.scss"  // Not needed with Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from 'jquery';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
