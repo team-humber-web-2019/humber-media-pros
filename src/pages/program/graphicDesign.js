@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../../components/Layout"
 import ProgramLayout from "../../components/ProgramLayout"
 
-import webBanner from "../../images/web-banner.jpg"
+import graphicBanner from "../../images/graphic-banner.jpg"
 import htmlLogo from "../../images/html-logo.png"
 import cssLogo from "../../images/css-logo.png"
 import jsLogo from "../../images/js-logo.png"
@@ -18,7 +18,7 @@ const graphicDesign = () => {
         <ProgramLayout>
         <div>
           
-        <div className={style.heroImg}><img src={webBanner} alt="Web design & development"/></div>
+        <div className="img-fluid"><img src={graphicBanner} alt="Web design & development"/></div>
       <h2 className={style.centerText}>Graphic Design for Print and Web</h2>
       <ul className="font-weight-bold">
         <li className="list-inline-item">Credentials: Certificate of Achievement |</li>

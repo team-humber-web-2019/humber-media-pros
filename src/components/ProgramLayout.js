@@ -1,8 +1,6 @@
 import React from "react"
 // import ReactDOM from "react-dom"
 import { Link } from "gatsby"
-import landingPage from "../images/landing-page-for-program.jpg"
-
 import style from "../styles/program.module.scss"
 
 const ProgramLayout = ({ children }) => {
@@ -10,9 +8,7 @@ const ProgramLayout = ({ children }) => {
   return (
     <>
       <div className={style.program}>
-        <div className={style.landingWrapper}>
-          <img src={landingPage} alt="landing-page" />
-        </div>
+
         <div className={style.courseDetails}>
           {/* <h2>Web Design & Development</h2>
           <p>This is the landing page for one of the three programs features at the show. Here would might have some kind of imagery, a description of the program, instructor names, course list, skills logos, etc.</p>
