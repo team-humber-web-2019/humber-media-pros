@@ -1,6 +1,7 @@
 import React from "react"
 import Header from "./Header"
 import Footer from "./Footer"
+import { graphql, useStaticQuery } from "gatsby"
 
 //import "../styles/reset.scss"  // Not needed with Bootstrap
 //import 'bootstrap/dist/css/bootstrap.min.css';
@@ -21,11 +22,24 @@ import style from "../styles/layout.module.scss"
 // https://www.gatsbyjs.org/packages/gatsby-plugin-purgecss/
 
 const Layout = ({ children }) => {
+  // Pull in required siteMetadata (from /gatsby-config.js)
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          author
+          twitter
+        }
+      }
+    }
+  `)
+
   return (
     <div>
       <Header />
       <main>{children}</main>
-      <Footer />
+      <Footer author={data.site.siteMetadata.author} />
     </div>
   )
 }

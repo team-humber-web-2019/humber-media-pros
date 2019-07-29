@@ -3,13 +3,13 @@ import { Link } from "gatsby"
 
 import style from "../styles/footer.module.scss"
 
-const Footer = () => {
+const Footer = ({ author }) => {
   return (
     <footer className={style.footer}>
       <div className="container">
         <p>
-          &copy; Copyright {new Date().getFullYear()},{" "}
-          <a href="http://humbermediapros.ca">Humber Media Pros</a>
+          &copy; Copyright 2018-{new Date().getFullYear()},{" "}
+          <a href="http://humbermediapros.ca">{author}</a>
         </p>
         <ul className="list-unstyled">
           <li className="list-inline-item">
