@@ -4,8 +4,8 @@ import Footer from "./Footer"
 
 //import "../styles/reset.scss"  // Not needed with Bootstrap
 //import 'bootstrap/dist/css/bootstrap.min.css';
-//import $ from 'jquery';
-//import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import $ from "jquery"
+import "bootstrap/dist/js/bootstrap.bundle.min.js"
 import "../styles/general.scss"
 import style from "../styles/layout.module.scss"
 
