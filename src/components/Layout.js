@@ -3,12 +3,11 @@ import Header from "./Header"
 import Footer from "./Footer"
 
 //import "../styles/reset.scss"  // Not needed with Bootstrap
-import 'bootstrap/dist/css/bootstrap.min.css';
-import $ from 'jquery';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+//import 'bootstrap/dist/css/bootstrap.min.css';
+//import $ from 'jquery';
+//import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import "../styles/general.scss"
 import style from "../styles/layout.module.scss"
-
 
 // Note we can also use specific Boostrap React Component packages:
 
@@ -21,14 +20,11 @@ import style from "../styles/layout.module.scss"
 // May also want to consider this plugin at some point:
 // https://www.gatsbyjs.org/packages/gatsby-plugin-purgecss/
 
-
-const Layout = ( {children} ) => {
+const Layout = ({ children }) => {
   return (
     <div>
       <Header />
-      <main>
-        {children}
-      </main>
+      <main>{children}</main>
       <Footer />
     </div>
   )
