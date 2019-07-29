@@ -10,5 +10,15 @@ module.exports = {
     author: "Testing Humber Media Pros",
     twitter: "humbermediapros",
   },
-  plugins: [`gatsby-plugin-sass`],
+  plugins: [
+    "gatsby-plugin-sass",
+    "gatsby-transformer-remark",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "src",
+        path: `${__dirname}/src/`,
+      },
+    },
+  ],
 }
