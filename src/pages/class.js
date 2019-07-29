@@ -18,6 +18,12 @@ const Class = () => {
         <p>Here you will be able to view the 2019 Web Design and Development program students and see their preferred job positions.
         </p>
         </div>
+        <div id="myBtnContainer">
+        <button class="btn active text-info" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn text-info" onclick="filterSelection('web')">Web Design and Development</button>
+        <button class="btn text-info" onclick="filterSelection('threed')">3D Modelling and Visual</button>
+        <button class="btn text-info" onclick="filterSelection('graphics')">Graphic Design for Print and Web</button>
+      </div>  
         <ul className ={style.studentlistcontainer}>
           <li className={style.student}>
             <div id={style.studentimage}>
@@ -115,6 +121,13 @@ const Class = () => {
               </div>
             </div>
           </li>
+        </ul>
+        <ul className={style.pagenationcontainer}>
+          <li><Link to="/class">1</Link></li>
+          <li><Link to="/class">2</Link></li>
+          <li><Link to="/class">3</Link></li>
+          <li><Link to="/class">4</Link></li>
+          <li><Link to="/class">5</Link></li>
         </ul>
     </div>
     </Layout>
