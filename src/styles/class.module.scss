@@ -1,10 +1,14 @@
 @import "variables";
-
+p {
+  margin:0;
+  line-height:2em;
+}
 
 .classlistcont {
   margin-top:4em;
   margin-bottom:4em;
 }
+
 
 .studentlistcontainer {
   display:grid;
@@ -39,10 +43,14 @@
   height:100%;
 }
 
-.name {
-  width:100%;
+.infocontainer {
   padding-left:10px;
   padding-right:10px;
+}
+
+.name {
+  width:100%;
+  
 }
 
 .name p {
@@ -51,13 +59,27 @@
 
 .jobtitle {
   width:100%;
-  margin-bottom:2.5em;
-  padding-left:10px;
-  padding-right:10px;
 }
 
 .jobtitle p {
   color: white;
+}
+
+.studentpagelink {
+  margin-bottom:2.5em;
+}
+
+.buttoncont {
+  width:100%;
+}
+
+.pagenationcontainer {
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+  list-style-type: none;  
+  width:60%;
+  font-weight:bold;
+  margin:0 auto 2em auto;  
 }
 
 @media only screen and (min-width:770px) {
@@ -69,5 +91,10 @@
 
   .student {
     width:80%;
+  }
+
+  .pagenationcontainer {
+    width:40%;
+
   }
 }
