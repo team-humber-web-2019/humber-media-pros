@@ -9,6 +9,21 @@
                         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) );
                         grid-gap: 20px;
 
+                        a{
+                                color: black;
+                        }
+
+                        a:nth-child(1){
+                                background: #FFEC5D;
+                        }
+                        a:nth-child(2){
+                                background: #F307B4;
+                        }
+                        a:nth-child(3){
+                                background: #03188C;
+                                color: #fff;
+                        }
+
                         li{
                                 height: 50px;
                                 width: 100%;
@@ -19,36 +34,17 @@
                                 a{
                                         text-decoration: none;
                                         color: #fff;
-
-
-                                        &:nth-child(1){
-                                                color: #000;
-                                        }
-                                        .active{
-                                                opacity: .5;
-                                        }
                                 }
-                        }
-
-
-                        li:nth-child(1){
-                                background: #FFEC5D;
-                        }
-                        li:nth-child(2){
-                                background: #F307B4;
-                        }
-                        li:nth-child(3){
-                                background: #03188C;
-                        }
-                        li:nth-child(3) a{
-                                color: #fff;
                         }
                 }
         }
 
 }
 
+.active{
+        opacity: .5;
 
+}
 
 .heroImg {
 width: 100%;
