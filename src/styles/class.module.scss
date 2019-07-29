@@ -72,6 +72,15 @@ p {
   width:100%;
 }
 
+.pagenationcontainer {
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+  list-style-type: none;  
+  width:60%;
+  font-weight:bold;
+  margin:0 auto 2em auto;  
+}
+
 @media only screen and (min-width:770px) {
 
   .studentlistcontainer {
@@ -81,5 +90,10 @@ p {
 
   .student {
     width:80%;
+  }
+
+  .pagenationcontainer {
+    width:40%;
+
   }
 }

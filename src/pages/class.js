@@ -116,6 +116,13 @@ const Class = () => {
             </div>
           </li>
         </ul>
+        <ul className={style.pagenationcontainer}>
+          <li><Link to="/class">1</Link></li>
+          <li><Link to="/class">2</Link></li>
+          <li><Link to="/class">3</Link></li>
+          <li><Link to="/class">4</Link></li>
+          <li><Link to="/class">5</Link></li>
+        </ul>
     </div>
     </Layout>
   )
