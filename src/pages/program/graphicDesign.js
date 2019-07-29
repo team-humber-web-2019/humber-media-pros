@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../../components/Layout"
 import ProgramLayout from "../../components/ProgramLayout"
-
 import graphicBanner from "../../images/graphic-banner.jpg"
 import htmlLogo from "../../images/html-logo.png"
 import cssLogo from "../../images/css-logo.png"
@@ -18,7 +17,8 @@ const graphicDesign = () => {
         <ProgramLayout>
         <div>
           
-        <div className="img-fluid"><img src={graphicBanner} alt="Web design & development"/></div>
+        <div className={style.heroImg}><img src={graphicBanner} alt="Web design & development"/></div>
+        <section className="container">
       <h2 className={style.centerText}>Graphic Design for Print and Web</h2>
       <ul className="font-weight-bold">
         <li className="list-inline-item">Credentials: Certificate of Achievement |</li>
@@ -40,8 +40,9 @@ const graphicDesign = () => {
           in their field of practice and study. Over the course of the program, you will build connections 
           with industry professionals, alumni and community partners to help prepare you for future career 
           opportunities, through supportive mentorship and coaching.</p>
+          </section>
 
-
+        <section className="container">
         <h2 className={style.centerText}>Courses</h2>
         <table className="table table-striped table-hover">
           <thead>
@@ -80,7 +81,9 @@ const graphicDesign = () => {
             </tr>
           </tbody>
         </table> 
-
+        </section>
+        
+        <section className="container">
         <h2 className={style.centerText}>Skills</h2>         
         <div className="row" className={style.formatRow}>
           <img src={htmlLogo} alt="Html" class="col-lg-2" />
@@ -89,6 +92,7 @@ const graphicDesign = () => {
           <img src={reactLogo} alt="React" class="col-lg-2" />   
           <img src={nodeLogo} alt="Node JS" class="col-lg-2" />       
         </div>
+        </section>
           </div>
         </ProgramLayout>
     </Layout>

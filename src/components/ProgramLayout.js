@@ -14,7 +14,7 @@ const ProgramLayout = ({ children }) => {
           <p>Here are the three programs as they are featured on Humber's main website:</p> */}
 
           <h1>PROGRAMS</h1>
-          <ul>
+          <ul className="container">
           <Link to="/program/wddm" className="active" activeClassName={style.active}><li>Web Design and Development</li> </Link>           
           <Link to="/program/visualEffects" activeClassName={style.active}><li>3D Modelling and Visual Effects Production</li></Link>
           <Link to="/program/graphicDesign" activeClassName={style.active}><li>Graphic Design for Print and Web</li></Link>
