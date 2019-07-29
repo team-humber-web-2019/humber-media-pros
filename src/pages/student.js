@@ -184,8 +184,7 @@ const Student = () => {
       <div class="container">
         <div style={{ border: "0" }} className="card text-center">
           <div className="card-body">
-            <h5 className="card-title">Featured</h5>
-            <p className="card-text">Below are some of featured my projects.</p>
+            <h5 className="card-title">Featured Projects</h5>
           </div>
         </div>
         <div className="card-deck">
