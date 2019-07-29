@@ -23,15 +23,23 @@ const graphicDesign = () => {
       <ul className="font-weight-bold">
         <li className="list-inline-item">Credentials: Certificate of Achievement |</li>
         <li className="list-inline-item">Program Length: 2 Semesters |</li>
-        <li className="list-inline-item">Program Code: WD911</li>
+        <li className="list-inline-item">Program Code: GR911</li>
       </ul>
-      <p>If you describe yourself as creative, resourceful, detail-oriented and a problem solver,
-         then Humber's Web Design and Development certificate program is for you. You will learn 
-         to critically analyze problems and apply best practices to plan, design and build websites/
-         applications. You will build sites and apps from ground up using the most up-to-date techniques
-         and fundamental technologies. You will also learn to tackle technical challenges by developing 
-         strong troubleshooting and problem solving skills. The works you create along your journey will 
-         be curated into a captivating portfolio website at the end of the program.</p>
+      <p>Motivated. Creative. Innovator. If these words describe you, then our intensive 
+        Graphic Design for Print & Web certificate program is for you. As a student, 
+        you will learn the fundamentals of design theory and communicate design thinking 
+        strategies through the use of functional composition, typography, illustration, 
+        interactive media and web design. Throughout our program, you will work towards 
+        developing a cutting-edge portfolio filled with real-world projects that will help you 
+        stand out in the creative field of graphic and web design.</p>
+
+        <p>In order to achieve the best, you will learn from the best. This program offers you 
+          access to the latest industry standards in hardware, design applications and instruction. 
+          Our labs are equipped with the latest Apple workstations, up-to-date Adobe Creative Cloud 
+          software and our course instruction is facilitated by industry-leading working professionals 
+          in their field of practice and study. Over the course of the program, you will build connections 
+          with industry professionals, alumni and community partners to help prepare you for future career 
+          opportunities, through supportive mentorship and coaching.</p>
 
 
         <h2 className={style.centerText}>Courses</h2>
@@ -46,40 +54,40 @@ const graphicDesign = () => {
           <tbody>
             <tr>
               <th scope="row">1</th>
-              <td>Applied Web Programming</td>
-              <td>Web Application Programming</td>
+              <td>Adobe Illustrator</td>
+              <td>UI Design</td>
             </tr>
             <tr>
               <th scope="row">2</th>
-              <td>Applied Web Design</td>
-              <td>Web Application Design</td>
+              <td>Adobe InDesign</td>
+              <td>Adobe InDesign - Advanced</td>
               <td></td>
             </tr>
             <tr>
               <th scope="row">3</th>
-              <td>Tools & Workflow for the Web</td>
-              <td>Web Frameworks & Advanced Design</td>
+              <td>Adobe Photoshop</td>
+              <td>Adobe Illustrator - Advanced</td>
             </tr>
             <tr>
               <th scope="row">4</th>
-              <td>Web Production Techniques</td>
-              <td>Digital Media Production for the Web</td>
+              <td>Web Design and Development</td>
+              <td>Web Design and Development - Advanced</td>
             </tr>
             <tr>
               <th scope="row">5</th>
-              <td>Web Design Planning & Prototyping</td>
-              <td>Employment skills & portfolio design</td>
+              <td>Typography</td>
+              <td>Career and Portfolio Development</td>
             </tr>
           </tbody>
         </table> 
 
         <h2 className={style.centerText}>Skills</h2>         
         <div className="row" className={style.formatRow}>
-          <img src={htmlLogo} alt="Html" className="col-md-2"/>
-          <img src={cssLogo} alt="CSS" className="col-md-2" />
-          <img src={jsLogo} alt="JavaScript" className="col-md-2" />
-          <img src={reactLogo} alt="React" className="col-md-2"/>   
-          <img src={nodeLogo} alt="Node JS" className="col-md-2"/>       
+          <img src={htmlLogo} alt="Html" class="col-lg-2" />
+          <img src={cssLogo} alt="CSS" class="col-lg-2"  />
+          <img src={jsLogo} alt="JavaScript" class="col-lg-2"  />
+          <img src={reactLogo} alt="React" class="col-lg-2" />   
+          <img src={nodeLogo} alt="Node JS" class="col-lg-2" />       
         </div>
           </div>
         </ProgramLayout>
