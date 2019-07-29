@@ -20,9 +20,9 @@ const ProgramLayout = ({ children }) => {
 
           <h1>PROGRAMS</h1>
           <ul>
-            <li><Link to="/program/wddm" activeClassName="active">Web Design and Development</Link></li>            
-            <li><Link to="/program/visualEffects" activeClassName="active">3D Modelling and Visual Effects Production</Link></li>
-            <li><Link to="/program/graphicDesign" activeClassName="active">Graphic Design for Print and Web</Link></li>
+          <Link to="/program/wddm" className="active" activeClassName={style.active}><li>Web Design and Development</li> </Link>           
+          <Link to="/program/visualEffects" activeClassName={style.active}><li>3D Modelling and Visual Effects Production</li></Link>
+          <Link to="/program/graphicDesign" activeClassName={style.active}><li>Graphic Design for Print and Web</li></Link>
             </ul>
         </div>
       </div>
