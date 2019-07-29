@@ -22,15 +22,21 @@ const visualEffects = () => {
       <ul className="font-weight-bold">
         <li className="list-inline-item">Credentials: Certificate of Achievement |</li>
         <li className="list-inline-item">Program Length: 2 Semesters |</li>
-        <li className="list-inline-item">Program Code: WD911</li>
+        <li className="list-inline-item">Program Code: 11671</li>
       </ul>
-      <p>If you describe yourself as creative, resourceful, detail-oriented and a problem solver,
-         then Humber's Web Design and Development certificate program is for you. You will learn 
-         to critically analyze problems and apply best practices to plan, design and build websites/
-         applications. You will build sites and apps from ground up using the most up-to-date techniques
-         and fundamental technologies. You will also learn to tackle technical challenges by developing 
-         strong troubleshooting and problem solving skills. The works you create along your journey will 
-         be curated into a captivating portfolio website at the end of the program.</p>
+      <p>Humber's 3D Modelling and Visual Effects Production certificate program focuses on both the 
+        conceptual and the technical, as you learn to master visual techniques to bring ideas to life. 
+        You will develop skills in modelling, texturing and lighting, as well as in visual effects, 
+        compositing and digital cinematography. We employ a teaching process and course structure 
+        that requires content created in one course to be used to complete assignments in other courses. 
+        This “pipeline” process mirrors that of industry, allowing students to make a seamless transition 
+        into a real production environment.</p>
+
+        <p>The program is designed by artists for experienced traditional artists and animators who want 
+          to either develop or transition their skill sets for employment in the 3D and visual effects industries. 
+          The faculty take their years of industry experience into the classroom, straight from the studio. 
+          Their collective experience and passion in the gaming, television and film industries is the driving 
+          force that ensures the program meets the current and future needs of the industry.</p>
 
 
         <h2 className={style.centerText}>Courses</h2>
@@ -45,29 +51,29 @@ const visualEffects = () => {
           <tbody>
             <tr>
               <th scope="row">1</th>
-              <td>Applied Web Programming</td>
-              <td>Web Application Programming</td>
+              <td>Digital Painting</td>
+              <td>Technical Animation and Particles</td>
             </tr>
             <tr>
               <th scope="row">2</th>
-              <td>Applied Web Design</td>
-              <td>Web Application Design</td>
+              <td>3D Lightning and Rendering</td>
+              <td>Modeling for Production</td>
               <td></td>
             </tr>
             <tr>
               <th scope="row">3</th>
-              <td>Tools & Workflow for the Web</td>
-              <td>Web Frameworks & Advanced Design</td>
+              <td>Inorganic Modelling</td>
+              <td>VFX Shot Developments</td>
             </tr>
             <tr>
               <th scope="row">4</th>
-              <td>Web Production Techniques</td>
-              <td>Digital Media Production for the Web</td>
+              <td>CG Foundations and Technology</td>
+              <td>3D Post-Production</td>
             </tr>
             <tr>
               <th scope="row">5</th>
-              <td>Web Design Planning & Prototyping</td>
-              <td>Employment skills & portfolio design</td>
+              <td>3D Sculpting</td>
+              <td>Demo Production</td>
             </tr>
           </tbody>
         </table> 
