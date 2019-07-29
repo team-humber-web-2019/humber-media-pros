@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../../components/Layout"
 import ProgramLayout from "../../components/ProgramLayout"
 
-import webBanner from "../../images/web-banner.jpg"
+import visualBanner from "../../images/visual-banner.jpg"
 import htmlLogo from "../../images/html-logo.png"
 import cssLogo from "../../images/css-logo.png"
 import jsLogo from "../../images/js-logo.png"
@@ -17,7 +17,8 @@ const visualEffects = () => {
     <Layout> 
       <ProgramLayout>
         <div>
-        <div className={style.heroImg}><img src={webBanner} alt="Web design & development"/></div>
+        <div className={style.heroImg}><img src={visualBanner} alt="Web design & development"/></div>
+        <section className="container">
       <h2 className={style.centerText}>3D Modelling and Visual Effects Production</h2>
       <ul className="font-weight-bold">
         <li className="list-inline-item">Credentials: Certificate of Achievement |</li>
@@ -37,8 +38,9 @@ const visualEffects = () => {
           The faculty take their years of industry experience into the classroom, straight from the studio. 
           Their collective experience and passion in the gaming, television and film industries is the driving 
           force that ensures the program meets the current and future needs of the industry.</p>
+          </section>
 
-
+      <section className="container">
         <h2 className={style.centerText}>Courses</h2>
         <table className="table table-striped table-hover">
           <thead>
@@ -77,7 +79,9 @@ const visualEffects = () => {
             </tr>
           </tbody>
         </table> 
-
+        </section>
+      
+        <section className="container">
         <h2 className={style.centerText}>Skills</h2>         
         <div className="row" className={style.formatRow}>
           <img src={htmlLogo} alt="Html" className="col-md-2"/>
@@ -85,7 +89,9 @@ const visualEffects = () => {
           <img src={jsLogo} alt="JavaScript" className="col-md-2" />
           <img src={reactLogo} alt="React" className="col-md-2"/>   
           <img src={nodeLogo} alt="Node JS" className="col-md-2"/>       
-        </div>        </div>
+        </div> 
+        </section>
+      </div>
         </ProgramLayout>
     </Layout>
   )

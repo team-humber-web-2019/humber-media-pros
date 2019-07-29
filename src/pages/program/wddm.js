@@ -17,6 +17,7 @@ const wddm = () => {
        <ProgramLayout>
         <div>
         <div className={style.heroImg}><img src={webBanner} alt="Web design & development"/></div>
+      <section className="container">  
       <h2 className={style.centerText}>Web Design & Development</h2>
       <ul className="font-weight-bold">
         <li className="list-inline-item">Credentials: Certificate of Achievement |</li>
@@ -30,8 +31,9 @@ const wddm = () => {
          and fundamental technologies. You will also learn to tackle technical challenges by developing 
          strong troubleshooting and problem solving skills. The works you create along your journey will 
          be curated into a captivating portfolio website at the end of the program.</p>
+         </section>
 
-
+        <section className="container">
         <h2 className={style.centerText}>Courses</h2>
         <table className="table table-striped table-hover">
           <thead>
@@ -69,8 +71,10 @@ const wddm = () => {
               <td>Employment skills & portfolio design</td>
             </tr>
           </tbody>
-        </table> 
+        </table>
+        </section> 
 
+        <section className="container">
         <h2 className={style.centerText}>Skills</h2>         
         <div className="row" className={style.formatRow}>
           <img src={htmlLogo} alt="Html" className="col-md-2"/>
@@ -79,6 +83,7 @@ const wddm = () => {
           <img src={reactLogo} alt="React" className="col-md-2"/>   
           <img src={nodeLogo} alt="Node JS" className="col-md-2"/>       
         </div>
+        </section>
         </div>
         </ProgramLayout>
     </Layout>
