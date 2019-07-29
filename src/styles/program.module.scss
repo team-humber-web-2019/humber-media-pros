@@ -1,4 +1,7 @@
 @import "variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
 
 .program{
 
@@ -46,6 +49,53 @@
 
 }
 
+.program{
+
+        div{
+                text-align: center;
+                ul{
+                        display: grid;
+                        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) );
+                        grid-gap: 20px;
+
+                        a{
+                                color: black;
+                                text-decoration: none;
+                        }
+
+                        a:nth-child(1){
+                                background: #FFEC5D;
+                        }
+                        a:nth-child(2){
+                                background: #F307B4;
+                        }
+                        a:nth-child(3){
+                                background: #03188C;
+                                color: #fff;
+                        }
+
+                        li{
+                                height: 50px;
+                                width: 100%;
+                                text-align: center;
+                                display: grid;
+                                place-items: center;
+
+                                a{
+                                        text-decoration: none;
+                                        color: #fff;
+                                }
+                        }
+                }
+        }
+
+}
+
+.active{
+        opacity: .5;
+
+}
+
 .heroImg {
 width: 100%;
 text-align: center;
@@ -56,9 +106,17 @@ margin: 1em;
 text-align: center;
 }
 
+
 .formatRow {
 text-align: center;
 margin: 10px;
+  
+        @media (max-width: map-get($container-max-widths, "lg")) {
+                img {
+                        width: 100% / $grid-columns * 2 ;
+                        padding: 0 0.5em;
+                }
+        }
 }
 
 
