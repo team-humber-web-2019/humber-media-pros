@@ -17,10 +17,11 @@ const Index = () => {
 <Layout>
 
    <img src={humberEventSvg} className={style.heroImag} alt="Responsive image" />
+
    <div className="card text-center  " className={style.midcard} >
    <div className="card-body">
-    <h5 className="card-title" className={style.midheading}>HUMBER MEDIA PROS GRAD SHOW 2019</h5>
-    <p className="card-text">This is the site landing page and will display the primary content banner for the event and all the important details about the event, location and what's being offered. Consider also including direct links to the three programs (for now, just linking them to the same page).</p>
+    <h5 className="card-title" className={style.midheading}>HUMBER MEDIA PROS GRAD SHOW 2019</h5><br/>
+    <p className="card-text"><small>This is the site landing page and will display the primary content banner for the event and all the important details about the event, location and what's being offered. Consider also including direct links to the three programs (for now, just linking them to the same page).</small></p>
     <a href="#" class="btn btn-light rounded-0" >Read More</a>
    </div>
    </div>
@@ -33,7 +34,7 @@ const Index = () => {
     <img src={graphicSvg} class="card-img-top" alt="graphicSvg"/>
     <div className="card-body ">
     <h5 className="card-title ">Graphic Design</h5>
-    <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <p className="card-text"><small>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</small></p>
     <p class="card-text"><small class="text-muted">More</small></p> 
     </div>
     </Link>
@@ -44,7 +45,7 @@ const Index = () => {
     <img src={webSvg} class="card-img-top" alt="graphicSvg"/>
     <div className="card-body ">
     <h5 className="card-title ">Web Design</h5>
-    <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <p className="card-text"><small>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</small></p>
     <p class="card-text"><small class="text-muted">More</small></p> 
     </div>
     </Link>
@@ -55,7 +56,7 @@ const Index = () => {
     <img src={DSvg} class="card-img-top" alt="graphicSvg"/>
     <div className="card-body ">
     <h5 className="card-title ">3D Design</h5>
-    <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <p className="card-text"><small>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</small></p>
     <p class="card-text"><small class="text-muted">More</small></p> 
     </div>
     </Link>
