@@ -18,7 +18,7 @@ const graphicDesign = () => {
         <ProgramLayout>
         <div>
           
-        <div className={style.heroImg}><img src={webBanner} alt="Web design & development"/></div>
+        <div className={style.heroImg}><img src= 'https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'alt="Web design & development"/></div>
       <h2 className={style.centerText}>Graphic Design for Print and Web</h2>
       <ul className="font-weight-bold">
         <li className="list-inline-item">Credentials: Certificate of Achievement |</li>
@@ -41,47 +41,7 @@ const graphicDesign = () => {
           with industry professionals, alumni and community partners to help prepare you for future career 
           opportunities, through supportive mentorship and coaching.</p>
 
-
-        <h2 className={style.centerText}>Courses</h2>
-        <table className="table table-striped table-hover">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">First Semester</th>
-              <th scope="col">Second Semester</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Adobe Illustrator</td>
-              <td>UI Design</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Adobe InDesign</td>
-              <td>Adobe InDesign - Advanced</td>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Adobe Photoshop</td>
-              <td>Adobe Illustrator - Advanced</td>
-            </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td>Web Design and Development</td>
-              <td>Web Design and Development - Advanced</td>
-            </tr>
-            <tr>
-              <th scope="row">5</th>
-              <td>Typography</td>
-              <td>Career and Portfolio Development</td>
-            </tr>
-          </tbody>
-        </table> 
-
-        <h2 className={style.centerText}>Skills</h2>         
+          <h2 className={style.centerText}>Skills</h2>         
         <div className="row" className={style.formatRow}>
           <img src={htmlLogo} alt="Html" class="col-lg-2" />
           <img src={cssLogo} alt="CSS" class="col-lg-2"  />
@@ -89,6 +49,46 @@ const graphicDesign = () => {
           <img src={reactLogo} alt="React" class="col-lg-2" />   
           <img src={nodeLogo} alt="Node JS" class="col-lg-2" />       
         </div>
+
+        <h2 className={style.centerText}>Courses</h2>
+        <table className="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">First Semester</th>
+              <th scope="col">Second Semester</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"></th>
+              <td>Adobe Illustrator</td>
+              <td>UI Design</td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td>Adobe InDesign</td>
+              <td>Adobe InDesign - Advanced</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td>Adobe Photoshop</td>
+              <td>Adobe Illustrator - Advanced</td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td>Web Design and Development</td>
+              <td>Web Design and Development - Advanced</td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td>Typography</td>
+              <td>Career and Portfolio Development</td>
+            </tr>
+          </tbody>
+        </table> 
+
           </div>
         </ProgramLayout>
     </Layout>

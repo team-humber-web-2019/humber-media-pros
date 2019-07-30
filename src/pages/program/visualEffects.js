@@ -17,7 +17,7 @@ const visualEffects = () => {
     <Layout> 
       <ProgramLayout>
         <div>
-        <div className={style.heroImg}><img src={webBanner} alt="Web design & development"/></div>
+        <div className={style.heroImg}><img src= 'https://images.unsplash.com/photo-1502404679462-d669245fc482?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80' alt="Web design & development"/></div>
       <h2 className={style.centerText}>3D Modelling and Visual Effects Production</h2>
       <ul className="font-weight-bold">
         <li className="list-inline-item">Credentials: Certificate of Achievement |</li>
@@ -38,54 +38,55 @@ const visualEffects = () => {
           Their collective experience and passion in the gaming, television and film industries is the driving 
           force that ensures the program meets the current and future needs of the industry.</p>
 
-
-        <h2 className={style.centerText}>Courses</h2>
-        <table className="table table-striped table-hover">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">First Semester</th>
-              <th scope="col">Second Semester</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Digital Painting</td>
-              <td>Technical Animation and Particles</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>3D Lightning and Rendering</td>
-              <td>Modeling for Production</td>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Inorganic Modelling</td>
-              <td>VFX Shot Developments</td>
-            </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td>CG Foundations and Technology</td>
-              <td>3D Post-Production</td>
-            </tr>
-            <tr>
-              <th scope="row">5</th>
-              <td>3D Sculpting</td>
-              <td>Demo Production</td>
-            </tr>
-          </tbody>
-        </table> 
-
-        <h2 className={style.centerText}>Skills</h2>         
+          <h2 className={style.centerText}>Skills</h2>         
         <div className="row" className={style.formatRow}>
           <img src={htmlLogo} alt="Html" className="col-md-2"/>
           <img src={cssLogo} alt="CSS" className="col-md-2" />
           <img src={jsLogo} alt="JavaScript" className="col-md-2" />
           <img src={reactLogo} alt="React" className="col-md-2"/>   
           <img src={nodeLogo} alt="Node JS" className="col-md-2"/>       
-        </div>        </div>
+        </div>
+
+        <h2 className={style.centerText}>Courses</h2>
+        <table className="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">First Semester</th>
+              <th scope="col">Second Semester</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"></th>
+              <td>Digital Painting</td>
+              <td>Technical Animation and Particles</td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td>3D Lightning and Rendering</td>
+              <td>Modeling for Production</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td>Inorganic Modelling</td>
+              <td>VFX Shot Developments</td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td>CG Foundations and Technology</td>
+              <td>3D Post-Production</td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td>3D Sculpting</td>
+              <td>Demo Production</td>
+            </tr>
+          </tbody>
+        </table> 
+
+        </div>
         </ProgramLayout>
     </Layout>
   )
