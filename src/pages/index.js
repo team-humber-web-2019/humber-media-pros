@@ -15,8 +15,8 @@ import style from "../styles/index.module.scss"
 const Index = () => {
   return (
 <Layout>
-    <img src={humberEventSvg} className={style.heroImag} alt="Responsive image" />
 
+   <img src={humberEventSvg} className={style.heroImag} alt="Responsive image" />
    <div className="card text-center  " className={style.midcard} >
    <div className="card-body">
     <h5 className="card-title" className={style.midheading}>HUMBER MEDIA PROS GRAD SHOW 2019</h5>
@@ -28,7 +28,7 @@ const Index = () => {
   <section  className={style.midcardText}>
   <div className="card-deck text-center " >
    
-    <div className="card border-0" >
+    <div className="card border-0 shadow-sm p-3 mb-5 bg-white rounded" >
     <Link to="/program" className={style.midcardText} >
     <img src={graphicSvg} class="card-img-top" alt="graphicSvg"/>
     <div className="card-body ">
@@ -39,7 +39,7 @@ const Index = () => {
     </Link>
     </div>
 
-    <div className="card border-0" >
+    <div className="card border-0 shadow-sm p-3 mb-5 bg-white rounded" >
     <Link to="/program" className={style.midcardText}>
     <img src={webSvg} class="card-img-top" alt="graphicSvg"/>
     <div className="card-body ">
@@ -50,7 +50,7 @@ const Index = () => {
     </Link>
     </div>
 
-    <div className="card border-0">
+    <div className="card border-0 shadow-sm p-3 mb-5 bg-white rounded">
     <Link to="/program" className={style.midcardText}>
     <img src={DSvg} class="card-img-top" alt="graphicSvg"/>
     <div className="card-body ">

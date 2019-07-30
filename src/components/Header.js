@@ -8,8 +8,8 @@ import style from "../styles/header.module.scss"
 const Header = () => {
   return (
     <header  >
-    <nav className="navbar navbar-expand-lg navbar-light bg-light" >
-    <Link className="nav-link" to="/"><img src={humberLogoSvg} className={style.headerLogo} alt="Humber College" /><span class="sr-only">(current)</span></Link>
+    <nav className="navbar navbar-expand-lg navbar-light bg-white" >
+    <Link className="nav-link" to="/"><img src={humberLogoSvg} className={style.headerLogo} alt="Humber College" /><span className="sr-only">(current)</span></Link>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarColor03">
@@ -24,7 +24,7 @@ const Header = () => {
       <Link className="nav-link" to="/student" >Student</Link>
      </li>
     </ul>
-   <form className="form-inline my-2 my-lg-0">
+   <form className="form-inline  mr-sm-2">
     <button className="btn btn-light" type="submit">Hire A Graduate</button>
    </form>
    </div>
