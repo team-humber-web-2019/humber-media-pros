@@ -21,14 +21,14 @@ const Index = () => {
    <div className="card-body">
     <h5 className="card-title" className={style.midheading}>HUMBER MEDIA PROS GRAD SHOW 2019</h5>
     <p className="card-text">This is the site landing page and will display the primary content banner for the event and all the important details about the event, location and what's being offered. Consider also including direct links to the three programs (for now, just linking them to the same page).</p>
-    <a href="#" class="btn btn-light">Read More</a>
+    <a href="#" class="btn btn-light rounded-0" >Read More</a>
    </div>
    </div>
       
   <section  className={style.midcardText}>
   <div className="card-deck text-center " >
    
-    <div className="card border-0 shadow-sm p-3 mb-5 bg-white rounded" >
+    <div className="card border-0 shadow-sm p-3 mb-5 bg-white rounded-0" >
     <Link to="/program" className={style.midcardText} >
     <img src={graphicSvg} class="card-img-top" alt="graphicSvg"/>
     <div className="card-body ">
@@ -39,7 +39,7 @@ const Index = () => {
     </Link>
     </div>
 
-    <div className="card border-0 shadow-sm p-3 mb-5 bg-white rounded" >
+    <div className="card border-0 shadow-sm p-3 mb-5 bg-white rounded-0" >
     <Link to="/program" className={style.midcardText}>
     <img src={webSvg} class="card-img-top" alt="graphicSvg"/>
     <div className="card-body ">
@@ -50,7 +50,7 @@ const Index = () => {
     </Link>
     </div>
 
-    <div className="card border-0 shadow-sm p-3 mb-5 bg-white rounded">
+    <div className="card border-0 shadow-sm p-3 mb-5 bg-white rounded-0">
     <Link to="/program" className={style.midcardText}>
     <img src={DSvg} class="card-img-top" alt="graphicSvg"/>
     <div className="card-body ">

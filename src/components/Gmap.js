@@ -11,7 +11,7 @@ const Gmap = () => {
       </iframe>    
       <div className="card-body">
         <h5 className="card-title">Date And Time</h5>
-        <p clasNclassNames="card-text">Thursday 15th August 2019 <br/> 5:00pm - 8:00pm</p>
+        <p className="card-text">Thursday 15th August 2019 <br/> 5:00pm - 8:00pm</p>
         <h5 className="card-title">Location</h5>
         <p className="card-text">3253 Lake Shore Blvd W, Humber College Art Commons, <br/>Torento ON M8V 1M2 </p>
       </div>
