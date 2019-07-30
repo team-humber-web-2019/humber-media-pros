@@ -9,14 +9,11 @@ const Header = () => {
   return (
     <header>
     <nav className="navbar navbar-expand-lg navbar-light bg-light" >
-    <img src={humberLogoSvg} className={style.headerLogo} alt="Humber College" />
+    <Link className="nav-link" to="/"><img src={humberLogoSvg} className={style.headerLogo} alt="Humber College" /><span class="sr-only">(current)</span></Link>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarColor03">
     <ul className="navbar-nav mr-auto">
-     <li className="nav-item active">
-     <Link className="nav-link" to="/">Home <span class="sr-only">(current)</span></Link>
-     </li>
      <li className="nav-item">
       <Link className="nav-link" to="/program" >Program</Link>
      </li>
