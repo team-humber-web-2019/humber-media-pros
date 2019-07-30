@@ -3,6 +3,8 @@
 .heroImag{
     width: 100%;
     height: auto;
+    position: relative;
+    margin-top: 3.8em;
   }
   
   .midheading{
@@ -28,6 +30,11 @@
 
     color:rgb(9, 37, 116);
     text-decoration-line: none;
-    text-shadow: 2px 4px 3px rgba(212, 212, 212, 0.3);
+    text-shadow: 2px 4px 3px rgba(212, 212, 212, 0.76);
+  }
+
+  .gmap{
+    margin-top: 1em;
+    height: 300px;
   }
 
