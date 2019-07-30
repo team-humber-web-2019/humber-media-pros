@@ -28,7 +28,7 @@ const Index = () => {
   <section  className={style.midcardText}>
   <div className="card-deck text-center " >
    
-    <div className="card">
+    <div className="card border-0" >
     <Link to="/program" className={style.midcardText} >
     <img src={graphicSvg} class="card-img-top" alt="graphicSvg"/>
     <div className="card-body ">
@@ -39,7 +39,7 @@ const Index = () => {
     </Link>
     </div>
 
-    <div className="card" >
+    <div className="card border-0" >
     <Link to="/program" className={style.midcardText}>
     <img src={webSvg} class="card-img-top" alt="graphicSvg"/>
     <div className="card-body ">
@@ -50,7 +50,7 @@ const Index = () => {
     </Link>
     </div>
 
-    <div className="card">
+    <div className="card border-0">
     <Link to="/program" className={style.midcardText}>
     <img src={DSvg} class="card-img-top" alt="graphicSvg"/>
     <div className="card-body ">
