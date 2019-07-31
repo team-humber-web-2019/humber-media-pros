@@ -4,133 +4,116 @@ import style from "../styles/class.module.scss"
 import profile from "../images/profile.jpg"
 import { Link } from "gatsby"
 
+const profilepicture = {
+  backgroundImage: 'url(' + profile + ')',
+  backgroundSize: 'cover',
+  // backgroundPosition: 'center center',
+  backgroundRepeat: 'no-repeat',
+  borderRadius: '50%'
+}
+
 const Class = () => {
   return (
     <Layout>
-      {/* <h2>Class List</h2>
-      <p>Here's a list of students in a particular program. We should also have some ways to filter the students as well, perhaps by expertise/skills.</p>
-      <p>Consider we could also show <em>all</em> students here from all programs who are participating, then filter by program (if desired). What are the benefits of either?</p> */}
-      <div className="classlistcont">
-        <h1>Web Design and Development</h1>
-        <br></br>
-        <div className="classlistdescription">
-        <h2>Class List</h2>
-        <p>Here you will be able to view the 2019 Web Design and Development program students and see their preferred job positions.
-        </p>
+      <div className={style.heropagecontainer}>
+        <div className={style.heropagecontents}>
+          <div className={style.herotextcontents}>
+            <h1 className={style.pagetitle}>Student List</h1>
+            <p>Discover the various new talent in the design, development, and 3d animation industry trained by the Humber Media Pros</p>
+          </div>
         </div>
-        <div id="myBtnContainer">
-        <button class="btn active text-info" onclick="filterSelection('all')"> Show all</button>
-        <button class="btn text-info" onclick="filterSelection('web')">Web Design and Development</button>
-        <button class="btn text-info" onclick="filterSelection('threed')">3D Modelling and Visual</button>
-        <button class="btn text-info" onclick="filterSelection('graphics')">Graphic Design for Print and Web</button>
-      </div>  
-        <ul className ={style.studentlistcontainer}>
-          <li className={style.student}>
-            <div id={style.studentimage}>
-              <img src={profile}></img>
-            </div>
-            <div className={style.infocontainer}>
-              <div className ={style.name}><p> Kyle  Brown</p></div>
-              <div className ={style.jobtitle}><p>Front-End Developer</p></div>
-              <div className = {style.buttoncont}>
-              <button type="button" className="btn btn-outline-info mt-3 mb-4 btn-sm">More info</button>
-              </div>
-            </div>
+      </div>
+      <ul className={[style.tablistcontainer, "nav nav-tabs nav-fill px-5"].join(` `)}>
+        <li className="nav-item">
+          <a className="nav-link active" href="#">All Students</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">Web Design and Development</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">Graphic Design for Print and Web</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">3D Animation, Art and Design</a>
+        </li>
+      </ul>
+      <div className={style.listbackground}>
+        <ul className={style.studentlistcontainer}>
+          <li className={style.studentcard}>
+            <div className={style.profilepic} style={profilepicture}></div>
+            <h2 className={style.studentname}>Student Name</h2>
+            <p className={style.jobtitle}>Web Developer</p>
+            <button type="button" className={style.btnpink}>View Student Profile</button>
           </li>
-          <li className={style.student}>
-            <div id={style.studentimage}>
-              <img src={profile}></img>
-            </div>
-            <div className={style.infocontainer}>
-              <div className ={style.name}><p> Kyle  Brown</p></div>
-              <div className ={style.jobtitle}><p>Front-End Developer</p></div>
-              <div className = {style.buttoncont}>
-              <button type="button" className="btn btn-outline-info mt-3 mb-4 btn-sm">More info</button>
-              </div>
-            </div>
+          <li className={style.studentcard}>
+            <div className={style.profilepic} style={profilepicture}></div>
+            <h2 className={style.studentname}>Student Name</h2>
+            <p className={style.jobtitle}>Web Developer</p>
+            <button type="button" className={style.btnpink}>View Student Profile</button>
           </li>
-          <li className={style.student}>
-            <div id={style.studentimage}>
-              <img src={profile}></img>
-            </div>
-            <div className={style.infocontainer}>
-              <div className ={style.name}><p> Kyle  Brown</p></div>
-              <div className ={style.jobtitle}><p>Front-End Developer</p></div>
-              <div className = {style.buttoncont}>
-              <button type="button" className="btn btn-outline-info mt-3 mb-4 btn-sm">More info</button>
-              </div>
-            </div>
+          <li className={style.studentcard}>
+            <div className={style.profilepic} style={profilepicture}></div>
+            <h2 className={style.studentname}>Student Name</h2>
+            <p className={style.jobtitle}>Web Developer</p>
+            <button type="button" className={style.btnpink}>View Student Profile</button>
           </li>
-          <li className={style.student}>
-            <div id={style.studentimage}>
-              <img src={profile}></img>
-            </div>
-            <div className={style.infocontainer}>
-              <div className ={style.name}><p> Kyle  Brown</p></div>
-              <div className ={style.jobtitle}><p>Front-End Developer</p></div>
-              <div className = {style.buttoncont}>
-              <button type="button" className="btn btn-outline-info mt-3 mb-4 btn-sm">More info</button>
-              </div>
-            </div>
+          <li className={style.studentcard}>
+            <div className={style.profilepic} style={profilepicture}></div>
+            <h2 className={style.studentname}>Student Name</h2>
+            <p className={style.jobtitle}>Web Developer</p>
+            <button type="button" className={style.btnpink}>View Student Profile</button>
           </li>
-          <li className={style.student}>
-            <div id={style.studentimage}>
-              <img src={profile}></img>
-            </div>
-            <div className={style.infocontainer}>
-              <div className ={style.name}><p> Kyle  Brown</p></div>
-              <div className ={style.jobtitle}><p>Front-End Developer</p></div>
-              <div className = {style.buttoncont}>
-              <button type="button" className="btn btn-outline-info mt-3 mb-4 btn-sm">More info</button>
-              </div>
-            </div>
+          <li className={style.studentcard}>
+            <div className={style.profilepic} style={profilepicture}></div>
+            <h2 className={style.studentname}>Student Name</h2>
+            <p className={style.jobtitle}>Web Developer</p>
+            <button type="button" className={style.btnpink}>View Student Profile</button>
           </li>
-          <li className={style.student}>
-            <div id={style.studentimage}>
-              <img src={profile}></img>
-            </div>
-            <div className={style.infocontainer}>
-              <div className ={style.name}><p> Kyle  Brown</p></div>
-              <div className ={style.jobtitle}><p>Front-End Developer</p></div>
-              <div className = {style.buttoncont}>
-              <button type="button" className="btn btn-outline-info mt-3 mb-4 btn-sm">More info</button>
-              </div>
-            </div>
+          <li className={style.studentcard}>
+            <div className={style.profilepic} style={profilepicture}></div>
+            <h2 className={style.studentname}>Student Name</h2>
+            <p className={style.jobtitle}>Web Developer</p>
+            <button type="button" className={style.btnpink}>View Student Profile</button>
           </li>
-          <li className={style.student}>
-            <div id={style.studentimage}>
-              <img src={profile}></img>
-            </div>
-            <div className={style.infocontainer}>
-              <div className ={style.name}><p> Kyle  Brown</p></div>
-              <div className ={style.jobtitle}><p>Front-End Developer</p></div>
-              <div className = {style.buttoncont}>
-              <button type="button" className="btn btn-outline-info mt-3 mb-4 btn-sm">More info</button>
-              </div>
-            </div>
+          <li className={style.studentcard}>
+            <div className={style.profilepic} style={profilepicture}></div>
+            <h2 className={style.studentname}>Student Name</h2>
+            <p className={style.jobtitle}>Web Developer</p>
+            <button type="button" className={style.btnpink}>View Student Profile</button>
           </li>
-          <li className={style.student}>
-            <div id={style.studentimage}>
-              <img src={profile}></img>
-            </div>
-            <div className={style.infocontainer}>
-              <div className ={style.name}><p> Kyle  Brown</p></div>
-              <div className ={style.jobtitle}><p>Front-End Developer</p></div>
-              <div className = {style.buttoncont}>
-              <button type="button" className="btn btn-outline-info mt-3 mb-4 btn-sm">More info</button>
-              </div>
-            </div>
+          <li className={style.studentcard}>
+            <div className={style.profilepic} style={profilepicture}></div>
+            <h2 className={style.studentname}>Student Name</h2>
+            <p className={style.jobtitle}>Web Developer</p>
+            <button type="button" className={style.btnpink}>View Student Profile</button>
+          </li>
+          <li className={style.studentcard}>
+            <div className={style.profilepic} style={profilepicture}></div>
+            <h2 className={style.studentname}>Student Name</h2>
+            <p className={style.jobtitle}>Web Developer</p>
+            <button type="button" className={style.btnpink}>View Student Profile</button>
+          </li>
+          <li className={style.studentcard}>
+            <div className={style.profilepic} style={profilepicture}></div>
+            <h2 className={style.studentname}>Student Name</h2>
+            <p className={style.jobtitle}>Web Developer</p>
+            <button type="button" className={style.btnpink}>View Student Profile</button>
+          </li>
+          <li className={style.studentcard}>
+            <div className={style.profilepic} style={profilepicture}></div>
+            <h2 className={style.studentname}>Student Name</h2>
+            <p className={style.jobtitle}>Web Developer</p>
+            <button type="button" className={style.btnpink}>View Student Profile</button>
+          </li>
+          <li className={style.studentcard}>
+            <div className={style.profilepic} style={profilepicture}></div>
+            <h2 className={style.studentname}>Student Name</h2>
+            <p className={style.jobtitle}>Web Developer</p>
+            <button type="button" className={style.btnpink}>View Student Profile</button>
           </li>
         </ul>
-        <ul className={style.pagenationcontainer}>
-          <li><Link to="/class">1</Link></li>
-          <li><Link to="/class">2</Link></li>
-          <li><Link to="/class">3</Link></li>
-          <li><Link to="/class">4</Link></li>
-          <li><Link to="/class">5</Link></li>
-        </ul>
-    </div>
-    </Layout>
+      </div>
+    </Layout >
   )
 }
 
