@@ -9,7 +9,6 @@ const Program = () => {
     <Layout>
       <ProgramLayout>
       
-     
         </ProgramLayout>
     </Layout>
   )
