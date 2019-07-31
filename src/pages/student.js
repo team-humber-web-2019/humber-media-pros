@@ -3,7 +3,15 @@ import Layout from "../components/Layout"
 import HeadShot from "../images/Placeholder-Headshot.jpg"
 import Placeholder from "../images/640x360.png"
 import Iconplaceholder from "../images/Icon-Placeholder.png"
-import Socialplaceholder from "../images/social-icon-placeholder.png"
+import DW from "../images/svgs/social/direct-website.svg"
+import LI from "../images/svgs/social/linkedin-icon-1.svg"
+import GH from "../images/svgs/social/github-1.svg"
+import FB from "../images/svgs/social/facebook-icon.svg"
+import IG from "../images/svgs/social/instagram-2-1.svg"
+import L1 from "../images/svgs/languages/css-5.svg"
+import L2 from "../images/svgs/languages/html5.svg"
+import L3 from "../images/svgs/languages/javascript.svg"
+import style from "../styles/student.module.scss"
 
 const Student = () => {
   return (
@@ -28,39 +36,42 @@ const Student = () => {
                 <b>YOUR FULL NAME</b>
               </h1>
               <p className="card-text card-style">YOUR PREFERRED TITLE</p>
-              <ul class="list-group list-group-horizontal">
-                <li style={{ border: "0" }} class="list-group-item">
+              <ul className="list-group list-group-horizontal">
+                <li style={{ border: "0" }} className="list-group-item">
                   <img
-                    src={Socialplaceholder}
-                    className="card-img"
+                    src={DW}
+                    className={style.socialIconStyle}
                     alt="Social Media Icon Placeholder"
                   />
                 </li>
-                <li style={{ border: "0" }} class="list-group-item">
+                <li style={{ border: "0" }} className="list-group-item">
                   <img
-                    src={Socialplaceholder}
-                    className="card-img"
+                    src={LI}
+                    className={style.socialIconStyle}
                     alt="Social Media Icon Placeholder"
                   />
                 </li>
-                <li style={{ border: "0" }} class="list-group-item">
+                <li style={{ border: "0" }} className="list-group-item">
                   <img
-                    src={Socialplaceholder}
-                    className="card-img"
+                    src={GH}
+                    className={style.socialIconStyle}
                     alt="Social Media Icon Placeholder"
                   />
                 </li>
-                <li style={{ border: "0" }} class="list-group-item">
+                <li
+                  style={{ border: "0" }}
+                  className="{style.socialIconStyle} list-group-item"
+                >
                   <img
-                    src={Socialplaceholder}
-                    className="card-img"
+                    src={FB}
+                    className={style.socialIconStyle}
                     alt="Social Media Icon Placeholder"
                   />
                 </li>
-                <li style={{ border: "0" }} class="list-group-item">
+                <li style={{ border: "0" }} className="list-group-item">
                   <img
-                    src={Socialplaceholder}
-                    className="card-img"
+                    src={IG}
+                    className={style.socialIconStyle}
                     alt="Social Media Icon Placeholder"
                   />
                 </li>
@@ -83,7 +94,7 @@ const Student = () => {
       </div>
       {/* -----------------SKILLS & EXPERIENCE SECTION---------------- */}
 
-      <div class="container">
+      <div className="container">
         <div style={{ border: "0" }} className="card text-center">
           <div className="card-body">
             <h5 className="card-title">Skills & Experience</h5>
@@ -91,83 +102,83 @@ const Student = () => {
         </div>
       </div>
 
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div style={{ border: "0" }} class="card text-center">
-              <div class="card-body">
-                <h5 class="card-title">Skills</h5>
-                <ul class="list-group list-group-horizontal">
-                  <li style={{ border: "0" }} class="list-group-item">
-                    <img src={Iconplaceholder} alt="Place Holder Icon" />
+      <div className="container">
+        <div className="row">
+          <div className="col">
+            <div style={{ border: "0" }} className="card text-center">
+              <div className="card-body">
+                <h5 className="card-title">Languages</h5>
+                <ul className="list-group list-group-horizontal">
+                  <li style={{ border: "0" }} className="list-group-item">
+                    <img src={L1} alt="Place Holder Icon" />
                   </li>
-                  <li style={{ border: "0" }} class="list-group-item">
-                    <img src={Iconplaceholder} alt="Place Holder Icon" />
+                  <li style={{ border: "0" }} className="list-group-item">
+                    <img src={L2} alt="Place Holder Icon" />
                   </li>
-                  <li style={{ border: "0" }} class="list-group-item">
-                    <img src={Iconplaceholder} alt="Place Holder Icon" />
+                  <li style={{ border: "0" }} className="list-group-item">
+                    <img src={L3} alt="Place Holder Icon" />
                   </li>
                 </ul>
-                {/* <a href="#" class="card-link">
+                {/* <a href="#" className="card-link">
                   Explore More..
                 </a> */}
               </div>
             </div>
-            <div style={{ border: "0" }} class="card text-center">
-              <div class="card-body">
-                <h5 class="card-title">Experience</h5>
-                <ul class="list-group list-group-horizontal">
-                  <li style={{ border: "0" }} class="list-group-item">
+            <div style={{ border: "0" }} className="card text-center">
+              <div className="card-body">
+                <h5 className="card-title">Experience</h5>
+                <ul className="list-group list-group-horizontal">
+                  <li style={{ border: "0" }} className="list-group-item">
                     <img src={Iconplaceholder} alt="Place Holder Icon" />
                   </li>
-                  <li style={{ border: "0" }} class="list-group-item">
+                  <li style={{ border: "0" }} className="list-group-item">
                     <img src={Iconplaceholder} alt="Place Holder Icon" />
                   </li>
-                  <li style={{ border: "0" }} class="list-group-item">
+                  <li style={{ border: "0" }} className="list-group-item">
                     <img src={Iconplaceholder} alt="Place Holder Icon" />
                   </li>
                 </ul>
-                {/* <a href="#" class="card-link">
+                {/* <a href="#" className="card-link">
                   Explore More..
                 </a> */}
               </div>
             </div>
           </div>
-          <div class="col">
-            <div style={{ border: "0" }} class="card text-center">
-              <div class="card-body">
-                <h5 class="card-title">Education</h5>
-                <ul class="list-group list-group-horizontal">
-                  <li style={{ border: "0" }} class="list-group-item">
+          <div className="col">
+            <div style={{ border: "0" }} className="card text-center">
+              <div className="card-body">
+                <h5 className="card-title">Education</h5>
+                <ul className="list-group list-group-horizontal">
+                  <li style={{ border: "0" }} className="list-group-item">
                     <img src={Iconplaceholder} alt="Place Holder Icon" />
                   </li>
-                  <li style={{ border: "0" }} class="list-group-item">
+                  <li style={{ border: "0" }} className="list-group-item">
                     <img src={Iconplaceholder} alt="Place Holder Icon" />
                   </li>
-                  <li style={{ border: "0" }} class="list-group-item">
+                  <li style={{ border: "0" }} className="list-group-item">
                     <img src={Iconplaceholder} alt="Place Holder Icon" />
                   </li>
                 </ul>
-                {/* <a href="#" class="card-link">
+                {/* <a href="#" className="card-link">
                   Explore More..
                 </a> */}
               </div>
             </div>
-            <div style={{ border: "0" }} class="card text-center">
-              <div class="card-body">
-                <h5 class="card-title">Technologies</h5>
-                <ul class="list-group list-group-horizontal">
-                  <li style={{ border: "0" }} class="list-group-item">
+            <div style={{ border: "0" }} className="card text-center">
+              <div className="card-body">
+                <h5 className="card-title">Technologies</h5>
+                <ul className="list-group list-group-horizontal">
+                  <li style={{ border: "0" }} className="list-group-item">
                     <img src={Iconplaceholder} alt="Place Holder Icon" />
                   </li>
-                  <li style={{ border: "0" }} class="list-group-item">
+                  <li style={{ border: "0" }} className="list-group-item">
                     <img src={Iconplaceholder} alt="Place Holder Icon" />
                   </li>
-                  <li style={{ border: "0" }} class="list-group-item">
+                  <li style={{ border: "0" }} className="list-group-item">
                     <img src={Iconplaceholder} alt="Place Holder Icon" />
                   </li>
                 </ul>
-                {/* <a href="#" class="card-link">
+                {/* <a href="#" className="card-link">
                   Explore More..
                 </a> */}
               </div>
@@ -177,11 +188,11 @@ const Student = () => {
       </div>
 
       {/*-------------------                   PORTFOLIO SECTION        --------------------------*/}
-      <div class="container">
+      <div className="container">
         <div style={{ border: "0" }} className="card text-center">
           <div className="card-body">
             <h5 className="card-title">Featured Projects</h5>
-            <button type="button" class="btn btn-primary">
+            <button type="button" className="btn btn-primary">
               View Portfolio
             </button>
           </div>
@@ -204,7 +215,7 @@ const Student = () => {
               </p>
             </div>
             <div className="card-footer">
-              <a href="#" class="card-link">
+              <a href="#" className="card-link">
                 Explore More..
               </a>
             </div>
@@ -225,7 +236,7 @@ const Student = () => {
               </p>
             </div>
             <div className="card-footer">
-              <a href="#" class="card-link">
+              <a href="#" className="card-link">
                 Explore More..
               </a>
             </div>
@@ -246,7 +257,7 @@ const Student = () => {
               </p>
             </div>
             <div className="card-footer">
-              <a href="#" class="card-link">
+              <a href="#" className="card-link">
                 Explore More..
               </a>
             </div>
