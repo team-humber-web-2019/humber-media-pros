@@ -126,7 +126,7 @@ const Student = () => {
                   >
                     <img
                       src={L1}
-                      alt="Place Holder Icon"
+                      alt="Skill Set Icon"
                       className={style.skillsIconStyle}
                     />
                   </li>
@@ -136,7 +136,7 @@ const Student = () => {
                   >
                     <img
                       src={L2}
-                      alt="Place Holder Icon"
+                      alt="Skill Set Icon"
                       className={style.skillsIconStyle}
                     />
                   </li>
@@ -146,7 +146,7 @@ const Student = () => {
                   >
                     <img
                       src={L3}
-                      alt="Place Holder Icon"
+                      alt="Skill Set Icon"
                       className={style.skillsIconStyle}
                     />
                   </li>
@@ -166,7 +166,7 @@ const Student = () => {
                   >
                     <img
                       src={GraphQLFW}
-                      alt="Place Holder Icon"
+                      alt="Skill Set Icon"
                       className={style.skillsIconStyle}
                     />
                   </li>
@@ -176,7 +176,7 @@ const Student = () => {
                   >
                     <img
                       src={GatsbyFW}
-                      alt="Place Holder Icon"
+                      alt="Skill Set Icon"
                       className={style.skillsIconStyle}
                     />
                   </li>
@@ -186,7 +186,7 @@ const Student = () => {
                   >
                     <img
                       src={ReactFW}
-                      alt="Place Holder Icon"
+                      alt="Skill Set Icon"
                       className={style.skillsIconStyle}
                     />
                   </li>
@@ -208,7 +208,7 @@ const Student = () => {
                   >
                     <img
                       src={BootStrapFW}
-                      alt="Place Holder Icon"
+                      alt="Skill Set Icon"
                       className={style.skillsIconStyle}
                     />
                   </li>
@@ -218,7 +218,7 @@ const Student = () => {
                   >
                     <img
                       src={BulmaFW}
-                      alt="Place Holder Icon"
+                      alt="Skill Set Icon"
                       className={style.skillsIconStyle}
                     />
                   </li>
@@ -228,7 +228,7 @@ const Student = () => {
                   >
                     <img
                       src={SASSFW}
-                      alt="Place Holder Icon"
+                      alt="Skill Set Icon"
                       className={style.skillsIconStyle}
                     />
                   </li>
@@ -248,7 +248,7 @@ const Student = () => {
                   >
                     <img
                       src={PS}
-                      alt="Place Holder Icon"
+                      alt="Skill Set Icon"
                       className={style.skillsIconStyle}
                     />
                   </li>
@@ -258,7 +258,7 @@ const Student = () => {
                   >
                     <img
                       src={AI}
-                      alt="Place Holder Icon"
+                      alt="Skill Set Icon"
                       className={style.skillsIconStyle}
                     />
                   </li>
@@ -268,7 +268,7 @@ const Student = () => {
                   >
                     <img
                       src={XD}
-                      alt="Place Holder Icon"
+                      alt="Skill Set Icon"
                       className={style.skillsIconStyle}
                     />
                   </li>
