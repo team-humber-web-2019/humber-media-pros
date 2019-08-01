@@ -10,7 +10,10 @@ import FB from "../images/svgs/social/facebook-icon.svg"
 import IG from "../images/svgs/social/instagram-2-1.svg"
 import L1 from "../images/svgs/languages/css-5.svg"
 import L2 from "../images/svgs/languages/html5.svg"
-import L3 from "../images/svgs/languages/javascript.svg"
+import L3 from "../images/svgs/languages/javascript.png"
+import GraphQLFW from "../images/svgs/frameworks-js/graphql.svg"
+import GatsbyFW from "../images/svgs/frameworks-js/gatsby.svg"
+import ReactFW from "../images/svgs/frameworks-js/react.svg"
 import style from "../styles/student.module.scss"
 
 const Student = () => {
@@ -35,6 +38,9 @@ const Student = () => {
               <h1 className="card-title">
                 <b>YOUR FULL NAME</b>
               </h1>
+              <p className="card-text card-style">
+                <strong>YOUR PROGRAM</strong>
+              </p>
               <p className="card-text card-style">YOUR PREFERRED TITLE</p>
               <ul className="list-group list-group-horizontal">
                 <li style={{ border: "0" }} className="list-group-item">
@@ -108,15 +114,36 @@ const Student = () => {
             <div style={{ border: "0" }} className="card text-center">
               <div className="card-body">
                 <h5 className="card-title">Languages</h5>
-                <ul className="list-group list-group-horizontal">
-                  <li style={{ border: "0" }} className="list-group-item">
-                    <img src={L1} alt="Place Holder Icon" />
+                <ul className="list-group list-group-horizontal mx-auto">
+                  <li
+                    style={{ border: "0" }}
+                    className="mx-auto list-group-item"
+                  >
+                    <img
+                      src={L1}
+                      alt="Place Holder Icon"
+                      className={style.skillsIconStyle}
+                    />
                   </li>
-                  <li style={{ border: "0" }} className="list-group-item">
-                    <img src={L2} alt="Place Holder Icon" />
+                  <li
+                    style={{ border: "0" }}
+                    className="list-group-item mx-auto"
+                  >
+                    <img
+                      src={L2}
+                      alt="Place Holder Icon"
+                      className={style.skillsIconStyle}
+                    />
                   </li>
-                  <li style={{ border: "0" }} className="list-group-item">
-                    <img src={L3} alt="Place Holder Icon" />
+                  <li
+                    style={{ border: "0" }}
+                    className="list-group-item  mx-auto"
+                  >
+                    <img
+                      src={L3}
+                      alt="Place Holder Icon"
+                      className={style.skillsIconStyle}
+                    />
                   </li>
                 </ul>
                 {/* <a href="#" className="card-link">
@@ -126,16 +153,28 @@ const Student = () => {
             </div>
             <div style={{ border: "0" }} className="card text-center">
               <div className="card-body">
-                <h5 className="card-title">Experience</h5>
-                <ul className="list-group list-group-horizontal">
+                <h5 className="card-title">JS Frameworks</h5>
+                <ul className="list-group list-group-horizontal mx-auto">
                   <li style={{ border: "0" }} className="list-group-item">
-                    <img src={Iconplaceholder} alt="Place Holder Icon" />
+                    <img
+                      src={GraphQLFW}
+                      alt="Place Holder Icon"
+                      className={style.skillsIconStyle}
+                    />
                   </li>
                   <li style={{ border: "0" }} className="list-group-item">
-                    <img src={Iconplaceholder} alt="Place Holder Icon" />
+                    <img
+                      src={GatsbyFW}
+                      alt="Place Holder Icon"
+                      className={style.skillsIconStyle}
+                    />
                   </li>
                   <li style={{ border: "0" }} className="list-group-item">
-                    <img src={Iconplaceholder} alt="Place Holder Icon" />
+                    <img
+                      src={ReactFW}
+                      alt="Place Holder Icon"
+                      className={style.skillsIconStyle}
+                    />
                   </li>
                 </ul>
                 {/* <a href="#" className="card-link">
