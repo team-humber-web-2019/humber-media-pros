@@ -3,49 +3,39 @@
 .heroImag{
     width: 100%;
     height: auto;
+    position: relative;
+    margin-top: 3.8em;
   }
   
   .midheading{
     text-align: center;
+    font-size: 2em;
     color: black;
-    margin-top: 4em;
+    margin-top: 1em;
   }
   
-  .midtext{
-    margin: 1em 10em;
+  .midcard{
+    border: none;
+    padding: 6em;
+    text-align: center;
+    line-height: 1.5em;
   }
-  
-  .program{
-      margin-top: 2em;
-  
-  }
-  
-  
 
-body {
-	font-family: "Open Sans", sans-serif;
-}
-h2 {
-	color: #333;
-	text-align: center;
-	text-transform: uppercase;
-	font-family: "Roboto", sans-serif;
-	font-weight: bold;
-	position: relative;
-	margin: 30px 0 60px;
-}
-h2::after {
-	content: "";
-	width: 100px;
-	position: absolute;
-	margin: 0 auto;
-	height: 3px;
-	background: #8fbc54;
-	left: 0;
-	right: 0;
-	bottom: -10px;
-}
-.col-center {
-	margin: 0 auto;
-	float: none !important;
-}
+  .midcardText {
+
+    color:rgb(37, 37, 37);
+    margin-bottom: 2em;
+
+  }
+
+  .midcardText a:hover{
+
+    color:rgb(0, 0, 0);
+    text-decoration-line: none;
+    text-shadow: 2px 4px 3px rgba(212, 212, 212, 0.76);
+  }
+
+  .gmap{
+    margin-top: 1em;
+    height: 350px;
+  }
