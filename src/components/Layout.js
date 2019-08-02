@@ -1,14 +1,21 @@
 import React from "react"
 import Header from "./Header"
 import Footer from "./Footer"
+import { graphql, useStaticQuery } from "gatsby"
 
+<<<<<<< HEAD
 import "../styles/reset.scss"  // Not needed with Bootstrap
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import $ from 'jquery';
 // import 'bootstrap/dist/js/bootstrap.bundle.min';
+=======
+//import "../styles/reset.scss"  // Not needed with Bootstrap
+//import 'bootstrap/dist/css/bootstrap.min.css';
+import $ from "jquery"
+import "bootstrap/dist/js/bootstrap.bundle.min.js"
+>>>>>>> ff53a08f019c77ea05dfffbe746806db7041a5f4
 import "../styles/general.scss"
 import style from "../styles/layout.module.scss"
-
 
 // Note we can also use specific Boostrap React Component packages:
 
@@ -21,15 +28,25 @@ import style from "../styles/layout.module.scss"
 // May also want to consider this plugin at some point:
 // https://www.gatsbyjs.org/packages/gatsby-plugin-purgecss/
 
+const Layout = ({ children }) => {
+  // Pull in required siteMetadata (from /gatsby-config.js)
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          author
+          twitter
+        }
+      }
+    }
+  `)
 
-const Layout = ( {children} ) => {
   return (
     <div>
       <Header />
-      <main className="container">
-        {children}
-      </main>
-      <Footer />
+      <main>{children}</main>
+      <Footer author={data.site.siteMetadata.author} />
     </div>
   )
 }
