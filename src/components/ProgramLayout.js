@@ -12,7 +12,7 @@ const ProgramLayout = ({ children }) => {
           {/* <h2>Web Design & Development</h2>
           <p>This is the landing page for one of the three programs features at the show. Here would might have some kind of imagery, a description of the program, instructor names, course list, skills logos, etc.</p>
           <p>Here are the three programs as they are featured on Humber's main website:</p> */}
-
+        <br/>
           <h1>PROGRAMS</h1>
           <ul className="container">
           <Link to="/program/wddm" className="active" activeClassName={style.active}><li>Web Design and Development</li> </Link>           
