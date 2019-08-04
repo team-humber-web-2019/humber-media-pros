@@ -28,35 +28,35 @@ const Index = () => {
   <section  className={style.midcardText}>
   <div className="card-deck text-center " >
    
-    <div className="card border-0 shadow-sm p-3 mb-5 bg-white rounded-0" >
+    <div className="card border-0 shadow p-3 mb-5 bg-white rounded" >
     <Link to="/program" className={style.midcardText} >
-    <img src={graphicSvg} class="card-img-top" alt="graphicSvg"/>
+    <img src={graphicSvg} className="card-img-top" alt="graphicSvg"/>
     <div className="card-body ">
     <h5 className="card-title ">Graphic Design</h5>
     <p className="card-text"><small>Motivated. Creative. Innovator. If these words describe you, then our intensive Graphic Design for Print & Web certificate program is for you.</small></p>
-    <p class="card-text"><small class="text-muted">More</small></p> 
+    <p className="card-text"><small className="text-muted">More</small></p> 
     </div>
     </Link>
     </div>
 
-    <div className="card border-0 shadow-sm p-3 mb-5 bg-white rounded-0" >
+    <div className="card border-0 shadow p-3 mb-5 bg-white rounded" >
     <Link to="/program" className={style.midcardText}>
-    <img src={webSvg} class="card-img-top" alt="graphicSvg"/>
+    <img src={webSvg} className="card-img-top" alt="graphicSvg"/>
     <div className="card-body ">
     <h5 className="card-title ">Web Design</h5>
     <p className="card-text"><small>If you describe yourself as creative, resourceful, detail-oriented and a problem solver, then Humber's Web Design and Development certificate program is for you.</small></p>
-    <p class="card-text"><small class="text-muted">More</small></p> 
+    <p className="card-text"><small className="text-muted">More</small></p> 
     </div>
     </Link>
     </div>
 
-    <div className="card border-0 shadow-sm p-3 mb-5 bg-white rounded-0">
+    <div className="card border-0 shadow p-3 mb-5 bg-white rounded">
     <Link to="/program" className={style.midcardText}>
-    <img src={DSvg} class="card-img-top" alt="graphicSvg"/>
+    <img src={DSvg} className="card-img-top" alt="graphicSvg"/>
     <div className="card-body ">
     <h5 className="card-title ">3D Design</h5>
     <p className="card-text"><small>Humber's 3D Modelling and Visual Effects Production certificate program focuses on both the conceptual and the technical, as you learn to master visual techniques to bring ideas to life.</small></p>
-    <p class="card-text"><small class="text-muted">More</small></p> 
+    <p className="card-text"><small className="text-muted">More</small></p> 
     </div>
     </Link>
     </div>
