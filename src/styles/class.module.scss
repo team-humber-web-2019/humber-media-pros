@@ -1,73 +1,115 @@
 @import "variables";
 
+.pagetitle {
+  font-size:2.5em;
+  font-weight:bold;
+}
 
-.classlistcont {
-  margin-top:4em;
-  margin-bottom:4em;
+h2 {
+  font-size:1.125em;
+  font-weight:bold;
+}
+
+p {
+  font-size:0.75em;
+}
+
+.heropagecontainer {
+  background:linear-gradient(90deg, rgba(78,112,255,1) 0%, rgba(3,24,140,1) 100%);
+
+}
+
+.heropagecontents {
+  width:80%;
+  height:300px;
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-column-gap:1em;
+  margin:auto;
+}
+
+.herotextcontents {
+  display:inline-block;
+  align-self:center;
+  // justify-self:center;
+  // width:70%;
+  color:white;
+}
+
+
+.tablistcontainer a {
+  color:$col-a !important;
+}
+
+.listbackground {
+  background-color:$col-i;
 }
 
 .studentlistcontainer {
   display:grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap:30px;
-  grid-row-gap: 50px;
+  grid-template-columns: repeat( auto-fit, minmax(260px, 1fr) );
+  grid-column-gap: 3em;
   padding:2em 0 2em 0;
-}
-
-.classlistdescription {
-  line-height:2em;
-}
-
-.student {
-  width:100%;
-  // max-width:210px;
-  height:100%;
-  background-color:$col-a;
-  list-style-type: none;
-  box-shadow: 8px 8px 18px -4px rgba(0,0,0,0.75);
   margin:auto;
+  width:80%;
+  max-width:1400px;
 }
 
-#studentimage {
-  width:100%;
-  // height:180px;
+.studentcard {
+  // justify-self: center;
+  width:220px;
+  list-style-type: none;
+  margin:1em auto 1em auto;
+  background-color:white;
+  padding: 1em 0 1em 0;
+  text-align: center;
+  box-shadow: 10px 10px 13px 0px rgba(0,0,0,0.18);
+  line-height:.5em;
+}
+
+.profilepic {
+  margin-left:auto;
+  margin-right:auto;
   margin-bottom:1em;
-}
-
-#studentimage >img {
-  width:100%;
-  height:100%;
-}
-
-.name {
-  width:100%;
-  padding-left:10px;
-  padding-right:10px;
-}
-
-.name p {
-  color: white;
+  margin-top:.5em;
+  height: 100px;
+  width: 100px;
 }
 
 .jobtitle {
-  width:100%;
-  margin-bottom:2.5em;
-  padding-left:10px;
-  padding-right:10px;
+  margin-bottom:2em;
 }
 
-.jobtitle p {
-  color: white;
+.btnpink {
+  background-color:$col-c;
+  color:white;
+  padding:1.3em 1em;
+  font-size:.75em;
+  border:0;
+  border-radius: .5em;
+  margin-bottom:1em;
+
 }
 
-@media only screen and (min-width:770px) {
+.btnpink:hover {
+  background-color:rgb(213, 6, 158);
+}
 
-  .studentlistcontainer {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 
+
+@media only screen and (min-width:600px) {
+  .pagetitle {
+    font-size:4.375em;
+  
   }
 
-  .student {
-    width:80%;
+  h2 {
+    font-size:1.25em;
+    font-weight:bold;
   }
+  
+  p {
+    font-size:0.875em;
+  }
+
 }
