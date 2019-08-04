@@ -12,25 +12,10 @@ const Footer = ({ author }) => {
           <a href="http://humbermediapros.ca">{author}</a>
         </p>
         <ul className="list-unstyled">
-<<<<<<< HEAD
           <li className="list-inline-item"><Link to="/">Home</Link></li>
           <li className="list-inline-item"><Link to="/program/wddm">Program</Link></li>
           <li className="list-inline-item"><Link to="/class">Class List</Link></li>
           <li className="list-inline-item"><Link to="/student">Student</Link></li>
-=======
-          <li className="list-inline-item">
-            <Link to="/">Home</Link>
-          </li>
-          <li className="list-inline-item">
-            <Link to="/program">Program</Link>
-          </li>
-          <li className="list-inline-item">
-            <Link to="/class">Class List</Link>
-          </li>
-          <li className="list-inline-item">
-            <Link to="/student">Student</Link>
-          </li>
->>>>>>> prototype-inclass-merge
         </ul>
       </div>
     </footer>
