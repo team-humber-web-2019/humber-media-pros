@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import humberLogoSvg from "../images/humber-logo.svg"
-import '../styles/bootstrap.min.css';
 import style from "../styles/header.module.scss"
 
 

@@ -1,11 +1,10 @@
 import React from "react"
-import Layout from "../components/Layout"
 import ash from "../images/ash.png"
 import arath from "../images/arath.png"
 import nina from "../images/Nina.jpg"
-import '../styles/bootstrap.min.css';
+// import '../styles/bootstrap.min.css';
 import style from "../styles/slider.module.scss"
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 const Slider = () => {
   return (
     <>
