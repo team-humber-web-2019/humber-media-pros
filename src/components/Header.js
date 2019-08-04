@@ -25,7 +25,7 @@ const Header = () => {
      </li>
     </ul>
    <form className="form-inline  mr-sm-2">
-    <button className="btn btn-light rounded-0" type="submit" >Hire A Graduate</button>
+    <button className="btn btn-light rounded-0" type="submit">Hire A Graduate</button>
    </form>
    </div>
    </nav>
