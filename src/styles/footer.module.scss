@@ -1,10 +1,15 @@
 @import "variables";
 
 .footer {
-  background-color: $col-b;
+  // background-color: $col-b;
+  @include linGradBg($col-a, $col-b);
   color: $col-b-on;
   padding: {
-    top: $space * 2;
-    bottom: $space * 2;
+    top: $space * 4;
+    bottom: $space * 4;
   }
+}
+
+.menu {
+  margin: 0;
 }

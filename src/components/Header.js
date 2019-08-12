@@ -55,7 +55,7 @@ const Header = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/program">
+              <Link className="nav-link" to="/program/wddm">
                 Program
               </Link>
             </li>
@@ -80,6 +80,11 @@ const Header = () => {
     </header>
   )
 }
+
+// Event Info >> Scrolls down
+// Location >> Scrolls down
+// Our Programs >> Scroll down, programs link out
+// "Hire a Grad" >> Student list
 
 
 export default Header

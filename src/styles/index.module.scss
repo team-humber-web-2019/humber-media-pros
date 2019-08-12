@@ -1,48 +1,96 @@
 @import "variables";
 
-.heroImag{
-    width: 100%;
-    height: auto;
-    position: relative;
-    margin-top: 3.8em;
-  }
+.section {
+  margin-top: 5em;
+  margin-bottom: 5em;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.heroImag {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-top: 3.8em;
+}
   
-  .midheading{
-    text-align: center;
-    font-size: 2em;
-    color: black;
-    margin-top: 1em;
+.midheading {
+  text-align: center;
+  font-size: 2em;
+  // color: black;
+  margin-top: 1em;
+}
+
+@mixin blendmodebg {
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@mixin covercolor {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+}
+
+.midcard {
+  @include linGradBg($col-e, $col-f);
+  color: $col-e-on;
+  position: relative;
+
+  background-color: $col-e;
+  background-image: url('http://canadacollege.co/wp-content/uploads/2019/04/Humber-College.jpg');
+  @include blendmodebg;
+}
+
+.midcard::before {
+  @include covercolor;
+  background-color: $col-e;
+}
+
+.location {
+  @include linGradBg($col-c, $col-d);
+  color: $col-d-on;
+  position: relative;
+
+  background-color: $col-d;
+  // background-image: url('https://static1.squarespace.com/static/569d245225981de028b696af/t/5bf59f63aa4a99960c67aecd/1542823187049/?format=2500w');
+  background-image: url('http://humber.ca/today/sites/default/files/old//images/news/art_commons.jpg');
+  @include blendmodebg;
+}
+.location::before {
+  @include covercolor;
+  background-color: $col-d;
+}
+
+.actionbtn {
+  background-color: $col-a;
+  color: $col-a-on;
+}
+
+
+
+$colors-list: $col-a $col-c $col-e;
+$colors-on-list: $col-a-on $col-c-on $col-e-on;
+.top-strap {
+  @each $curr-color in $colors-list {
+      $i: index($colors-list, $curr-color);
+      .program:nth-child( #{$i} ) & { 
+        border-top: 0.4em solid $curr-color !important;
+      }
   }
-  
-  .midcard{
-    border: none;
-    padding: 6em;
-    text-align: center;
-    line-height: 1.5em;
+}
+.btnProgram {
+  @each $curr-color in $colors-list {
+      $i: index($colors-list, $curr-color);
+      .program:nth-child( #{$i} ) & { 
+        background-color: $curr-color;
+        color: nth($colors-on-list, $i);
+      }
   }
-
-  .midcardText {
-
-    color:rgb(37, 37, 37);
-    // margin-bottom: 2em;
-
-  }
-
-  .midcardText a:hover{
-
-    color:rgb(0, 0, 0);
-    text-decoration-line: none;
-    text-shadow: 2px 4px 3px rgba(212, 212, 212, 0.76);
-  }
-
-  .gmap{
-    margin-top: 1em;
-    height: 350px;
-    width: 100%;
-  }
-
-
-  .location {
-    background-color: $col-d;
-    color: $col-d-on;
-  }
+}

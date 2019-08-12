@@ -7,13 +7,14 @@ import style from "../styles/slider.module.scss"
 // import 'bootstrap/dist/css/bootstrap.min.css';
 const Slider = () => {
   return (
-    <>
-<div className="container">
-  <div className="row text-center ">
-    <div className={`col-md-8 col-center m-auto ` + style.col + `-` + style.center}>
-    <br/> <br/> <h5>OUR STUDENTS</h5><br/> 
-      <div id="myCarousel" className={`carousel slide ` + style.carousel + style.slide} data-ride="carousel">
-        
+    <div className={`row my-4`}>
+      <div className="col-md-2">
+        <a className="carousel-control-prev pl-2" href="#myCarousel" role="button" data-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="sr-only">Previous</span>
+        </a>
+      </div>
+      <div id="myCarousel" className={`col-md-8 carousel slide ` + style.carousel + style.slide} data-ride="carousel">
         <div className={`carousel-inner ` + style.carousel + `-` + style.inner}>
           <div className={`item carousel-item active ` + style.item + style.carousel + `-` + style.item + style.active}>
             <div className={`img-box ` + style.imagee}><img className="rounded-circle img-fluid" src={arath} alt="Arath"/></div><br/> 
@@ -33,10 +34,13 @@ const Slider = () => {
         </div>
        
       </div>
+      <div className="col-md-2">
+        <a className="carousel-control-next pr-2" href="#myCarousel" role="button" data-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="sr-only">Next</span>
+        </a>
+      </div>
     </div>
-  </div>
-</div>
-    </>
   )
 }
 export default Slider

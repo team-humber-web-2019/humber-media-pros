@@ -11,7 +11,7 @@ const Footer = ({ author }) => {
           &copy; Copyright 2018-{new Date().getFullYear()},{" "}
           <a href="http://humbermediapros.ca">{author}</a>
         </p>
-        <ul className="list-unstyled">
+        <ul className={`list-unstyled ${style.menu}`}>
           <li className="list-inline-item"><Link to="/">Home</Link></li>
           <li className="list-inline-item"><Link to="/program/wddm">Program</Link></li>
           <li className="list-inline-item"><Link to="/class">Class List</Link></li>

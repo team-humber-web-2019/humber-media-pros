@@ -15,7 +15,7 @@ $col-err-on: $DARK;
 
 // As per the design guide, the first colour is the "down" state, the second colour is the "up" state
 // Blue
-$col-a: #03188C; $col-b-on: $LIGHT;
+$col-a: #03188C; $col-a-on: $LIGHT;
 $col-b: #3E57C1; $col-b-on: $LIGHT;
 // Pink
 $col-c: #F307B4; $col-c-on: $LIGHT;
@@ -31,3 +31,8 @@ $col-i: #F2F2F2; $col-i-on: $DARK;
 
 $font-a: 'Lato', 'Open Sans', Helvetica, Arial, sans-serif;
 $space: 1em;
+
+@mixin linGradBg($from, $to) {
+  background: $from;
+  background: linear-gradient(180deg, $from 0%, $to 100%);  
+}
