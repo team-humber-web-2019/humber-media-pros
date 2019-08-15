@@ -12,7 +12,7 @@
   width: 100%;
   height: auto;
   position: relative;
-  margin-top: 3.8em;
+  margin-top: 2.4em;
 }
   
 .midheading {
@@ -44,7 +44,7 @@
   position: relative;
 
   background-color: $col-e;
-  background-image: url('http://canadacollege.co/wp-content/uploads/2019/04/Humber-College.jpg');
+  background-image: url('../images/humber-college.jpg');
   @include blendmodebg;
 }
 
@@ -60,7 +60,7 @@
 
   background-color: $col-d;
   // background-image: url('https://static1.squarespace.com/static/569d245225981de028b696af/t/5bf59f63aa4a99960c67aecd/1542823187049/?format=2500w');
-  background-image: url('http://humber.ca/today/sites/default/files/old//images/news/art_commons.jpg');
+  background-image: url('../images/humber-art-commons.jpg');
   @include blendmodebg;
 }
 .location::before {
@@ -73,7 +73,23 @@
   color: $col-a-on;
 }
 
+@media (min-width: 991px) {
 
+  .fix {
+    flex: none;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .btnProgram {
+    display: block;
+  }
+  .fix:nth-child(3) {
+    width: 100%;
+  }
+}
+  
 
 $colors-list: $col-a $col-c $col-e;
 $colors-on-list: $col-a-on $col-c-on $col-e-on;

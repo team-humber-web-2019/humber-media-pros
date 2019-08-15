@@ -2,14 +2,24 @@
 
 .footer {
   // background-color: $col-b;
-  @include linGradBg($col-a, $col-b);
-  color: $col-b-on;
+  // @include linGradBg($col-a, $col-b);
+  background-color: #291f1f;
+  color: $LIGHT;
   padding: {
     top: $space * 4;
     bottom: $space * 4;
+  }
+
+  a {
+    color: $col-b;
   }
 }
 
 .menu {
   margin: 0;
 }
+
+.copyright {
+  margin: 0.5em 0;
+}
+

@@ -34,7 +34,7 @@ import style from "../styles/student.module.scss"
 // `;
 
 
-const Student = (props) => {
+const Student = () => {
 
 
   return (
@@ -56,7 +56,7 @@ const Student = (props) => {
             <div className="card-body">
               <h3>Hello, I am</h3>
               <h1 className="card-title">
-                <b>{props.data.markdownRemark.frontmatter.name}</b>
+                {/* <b>{props.data.markdownRemark.frontmatter.name}</b> */}
               </h1>
               <p className="card-text card-style">
                 <strong>YOUR PROGRAM</strong>
@@ -104,7 +104,7 @@ const Student = (props) => {
               </ul>
               <br />
               {/* -----------------------ABOUT ME SECTION--------------------------------- */}
-              <p className="card-text card-style" dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}}></p>
+              {/* <p className="card-text card-style" dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}}></p> */}
             </div>
           </div>
         </div>
@@ -352,7 +352,7 @@ const Student = (props) => {
               <h5 className="card-title">Project 333</h5>
               <p className="card-text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
-                est id ipsam quis, tenetur itaque porro sequi enim labore
+                est id ipsam quis, tenetur itaque porro seqçui enim labore
                 voluptatibus ducimus doloribus nemo omnis incidunt voluptas
                 magnam non facere reprehenderit!
               </p>

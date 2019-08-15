@@ -6,8 +6,8 @@
 
 module.exports = {
   siteMetadata: {
-    title: "Humber Year-End Portfolio Show 2019",
-    author: "Testing Humber Media Pros",
+    title: "Humber College's Portfolio Grad Show 2019",
+    author: "Humber Media Pros",
     twitter: "humbermediapros",
   },
   plugins: [

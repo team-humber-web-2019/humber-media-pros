@@ -2,22 +2,29 @@ import React from "react"
 import Header from "./Header"
 import Footer from "./Footer"
 import { graphql, useStaticQuery } from "gatsby"
-
-//import "../styles/reset.scss"  // Not needed with Bootstrap
-// import 'bootstrap/dist/css/bootstrap.min.css';
 // import $ from 'jquery';
-// import 'bootstrap/dist/js/bootstrap.bundle.min';
-//import "../styles/reset.scss"  // Not needed with Bootstrap
-// import 'bootstrap/dist/css/bootstrap.min.css';
 
 import "../styles/general.scss"
+import style from "../styles/layout.module.scss"
+
+// import $ from 'jquery';
+// import 'popper.js';
+// import 'bootstrap';
+//import "../styles/reset.scss"  // Not needed with Bootstrap
+
+// import { withPrefix } from "gatsby"
+{/* <script async src={withPrefix('site_js/jquery.js')} type="text/javascript" /> */}
+{/* <script async src={withPrefix('site_js/popper.js')} type="text/javascript" /> */}
+
+
+
+
 //import $ from "jquery"
 // import '../../node_modules/jquery/dist/jquery.min.js'
 // import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
 // import '../../node_modules/popper.js/dist/popper.min'
 // import 'bootstrap/js/dist/carousel'
 
-import style from "../styles/layout.module.scss"
 
 // import './src/sass/app.scss'
 // import 'jquery/dist/jquery.min.js'

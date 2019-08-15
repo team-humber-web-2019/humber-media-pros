@@ -36,7 +36,7 @@ const Header = () => {
           className={style.headerLogo}
           alt="Humber College"
         />
-        <button
+        {/* <button
           className="navbar-toggler"
           type="button"
           data-toggle="collapse"
@@ -46,8 +46,8 @@ const Header = () => {
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarColor03">
+        </button> */}
+        {/* <div className="collapse navbar-collapse" id="navbarColor03">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item active">
               <Link className="nav-link" to="/">
@@ -75,7 +75,7 @@ const Header = () => {
               Hire A Graduate
             </button>
           </form>
-        </div>
+        </div> */}
       </nav>
     </header>
   )

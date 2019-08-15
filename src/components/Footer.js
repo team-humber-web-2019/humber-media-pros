@@ -7,16 +7,16 @@ const Footer = ({ author }) => {
   return (
     <footer className={style.footer}>
       <div className="container">
-        <p>
-          &copy; Copyright 2018-{new Date().getFullYear()},{" "}
+        <p className={style.copyright}>
+          &copy; Copyright {new Date().getFullYear()},{" "}
           <a href="http://humbermediapros.ca">{author}</a>
         </p>
-        <ul className={`list-unstyled ${style.menu}`}>
+        {/* <ul className={`list-unstyled ${style.menu}`}>
           <li className="list-inline-item"><Link to="/">Home</Link></li>
           <li className="list-inline-item"><Link to="/program/wddm">Program</Link></li>
           <li className="list-inline-item"><Link to="/class">Class List</Link></li>
           <li className="list-inline-item"><Link to="/student">Student</Link></li>
-        </ul>
+        </ul> */}
       </div>
     </footer>
   )
