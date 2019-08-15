@@ -68,7 +68,7 @@ const Index = () => {
       
       <section className={`row ${style.programs}`} >
         <div className={`container ${style.section} ${style.midcardText}`}>
-          <h1>Who</h1>
+          <h1>Our Programs</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, incidunt id? Molestiae ab culpa suscipit fugit atque deleniti adipisci sequi facere officia, laudantium iure, exercitationem necessitatibus a impedit, et voluptatem.</p>
           {/* <div className="card-deck text-center"> */}
           <div className="d-flex flex-column flex-lg-row text-center row py-4">
@@ -97,12 +97,15 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="row">
+      {/* <section className="row">
         <div className={`container ${style.section}`}>  
-          <h1>OUR STUDENTS</h1>
+          <h1>Our Students</h1>
           <Slider />
+          <div className="text-center">
+            <Link to="/class" className="btn btn-primary">See all of our student profiles</Link>
+          </div>
         </div>
-      </section>
+      </section> */}
     </Layout>
   )
 }

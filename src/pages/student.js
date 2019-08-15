@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import HeadShot from "../images/Placeholder-Headshot.jpg"
 import Placeholder from "../images/640x360.png"
@@ -21,7 +22,21 @@ import AI from "../images/svgs/design-tools/adobe-illustrator-cc.svg"
 import XD from "../images/svgs/design-tools/adobe-xd.svg"
 import style from "../styles/student.module.scss"
 
-const Student = () => {
+// export const query = graphql`
+//   query($slug: String!) {
+//     markdownRemark(fields: {slug: {eq: $slug}}) {
+//       frontmatter {
+//         name
+//       }
+//       html
+//     } 
+//   }
+// `;
+
+
+const Student = (props) => {
+
+
   return (
     <Layout>
       {/* <h2>One Sample Student</h2>
@@ -41,7 +56,7 @@ const Student = () => {
             <div className="card-body">
               <h3>Hello, I am</h3>
               <h1 className="card-title">
-                <b>YOUR FULL NAME</b>
+                <b>{props.data.markdownRemark.frontmatter.name}</b>
               </h1>
               <p className="card-text card-style">
                 <strong>YOUR PROGRAM</strong>
@@ -89,16 +104,7 @@ const Student = () => {
               </ul>
               <br />
               {/* -----------------------ABOUT ME SECTION--------------------------------- */}
-              <p className="card-text card-style">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-                sit, doloribus facere nihil enim, cupiditate quis perspiciatis
-                quo nesciunt eligendi harum mollitia delectus dolore voluptatum
-                adipisci, voluptatibus ullam ut molestiae. Lorem ipsum dolor,
-                sit amet consectetur adipisicing elit. Nisi cum sunt laborum
-                deserunt placeat ipsa magnam quae. Ut expedita, dolore
-                voluptatibus reiciendis minus voluptatum eum maiores enim vitae
-                totam aliquam!
-              </p>
+              <p className="card-text card-style" dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}}></p>
             </div>
           </div>
         </div>

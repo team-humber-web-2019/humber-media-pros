@@ -8,11 +8,22 @@ import { graphql, useStaticQuery } from "gatsby"
 // import $ from 'jquery';
 // import 'bootstrap/dist/js/bootstrap.bundle.min';
 //import "../styles/reset.scss"  // Not needed with Bootstrap
-//import 'bootstrap/dist/css/bootstrap.min.css';
-import $ from "jquery"
-import "bootstrap/dist/js/bootstrap.bundle.min.js"
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
 import "../styles/general.scss"
+//import $ from "jquery"
+// import '../../node_modules/jquery/dist/jquery.min.js'
+// import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+// import '../../node_modules/popper.js/dist/popper.min'
+// import 'bootstrap/js/dist/carousel'
+
 import style from "../styles/layout.module.scss"
+
+// import './src/sass/app.scss'
+// import 'jquery/dist/jquery.min.js'
+// import 'popper.js/dist/popper.min'
+// import 'bootstrap/dist/js/bootstrap.min.js'
+
 
 // Note we can also use specific Boostrap React Component packages:
 

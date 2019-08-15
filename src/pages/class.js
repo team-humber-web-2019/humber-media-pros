@@ -1,4 +1,6 @@
 import React from "react"
+import {graphql, useStaticQuery} from "gatsby"
+
 import Layout from "../components/Layout"
 import style from "../styles/class.module.scss"
 import profile from "../images/profile.jpg"
@@ -13,6 +15,28 @@ const profilepicture = {
 }
 
 const Class = () => {
+
+  const data = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark {
+        edges {
+          node {
+            frontmatter {
+              name
+              program
+              spot
+              faves
+            }
+            html
+            fields {
+              slug
+            }
+          }
+        }
+      }
+    }`
+  );
+
   return (
     <Layout>
       <div className={style.heropagecontainer}>
@@ -39,78 +63,22 @@ const Class = () => {
       </ul>
       <div className={style.listbackground}>
         <ul className={style.studentlistcontainer}>
-          <li className={style.studentcard}>
-            <div className={style.profilepic} style={profilepicture}></div>
-            <h2 className={style.studentname}>Student Name</h2>
-            <p className={style.jobtitle}>Web Developer</p>
-            <button type="button" className={style.btnpink}>View Student Profile</button>
-          </li>
-          <li className={style.studentcard}>
-            <div className={style.profilepic} style={profilepicture}></div>
-            <h2 className={style.studentname}>Student Name</h2>
-            <p className={style.jobtitle}>Web Developer</p>
-            <button type="button" className={style.btnpink}>View Student Profile</button>
-          </li>
-          <li className={style.studentcard}>
-            <div className={style.profilepic} style={profilepicture}></div>
-            <h2 className={style.studentname}>Student Name</h2>
-            <p className={style.jobtitle}>Web Developer</p>
-            <button type="button" className={style.btnpink}>View Student Profile</button>
-          </li>
-          <li className={style.studentcard}>
-            <div className={style.profilepic} style={profilepicture}></div>
-            <h2 className={style.studentname}>Student Name</h2>
-            <p className={style.jobtitle}>Web Developer</p>
-            <button type="button" className={style.btnpink}>View Student Profile</button>
-          </li>
-          <li className={style.studentcard}>
-            <div className={style.profilepic} style={profilepicture}></div>
-            <h2 className={style.studentname}>Student Name</h2>
-            <p className={style.jobtitle}>Web Developer</p>
-            <button type="button" className={style.btnpink}>View Student Profile</button>
-          </li>
-          <li className={style.studentcard}>
-            <div className={style.profilepic} style={profilepicture}></div>
-            <h2 className={style.studentname}>Student Name</h2>
-            <p className={style.jobtitle}>Web Developer</p>
-            <button type="button" className={style.btnpink}>View Student Profile</button>
-          </li>
-          <li className={style.studentcard}>
-            <div className={style.profilepic} style={profilepicture}></div>
-            <h2 className={style.studentname}>Student Name</h2>
-            <p className={style.jobtitle}>Web Developer</p>
-            <button type="button" className={style.btnpink}>View Student Profile</button>
-          </li>
-          <li className={style.studentcard}>
-            <div className={style.profilepic} style={profilepicture}></div>
-            <h2 className={style.studentname}>Student Name</h2>
-            <p className={style.jobtitle}>Web Developer</p>
-            <button type="button" className={style.btnpink}>View Student Profile</button>
-          </li>
-          <li className={style.studentcard}>
-            <div className={style.profilepic} style={profilepicture}></div>
-            <h2 className={style.studentname}>Student Name</h2>
-            <p className={style.jobtitle}>Web Developer</p>
-            <button type="button" className={style.btnpink}>View Student Profile</button>
-          </li>
-          <li className={style.studentcard}>
-            <div className={style.profilepic} style={profilepicture}></div>
-            <h2 className={style.studentname}>Student Name</h2>
-            <p className={style.jobtitle}>Web Developer</p>
-            <button type="button" className={style.btnpink}>View Student Profile</button>
-          </li>
-          <li className={style.studentcard}>
-            <div className={style.profilepic} style={profilepicture}></div>
-            <h2 className={style.studentname}>Student Name</h2>
-            <p className={style.jobtitle}>Web Developer</p>
-            <button type="button" className={style.btnpink}>View Student Profile</button>
-          </li>
-          <li className={style.studentcard}>
-            <div className={style.profilepic} style={profilepicture}></div>
-            <h2 className={style.studentname}>Student Name</h2>
-            <p className={style.jobtitle}>Web Developer</p>
-            <button type="button" className={style.btnpink}>View Student Profile</button>
-          </li>
+          
+          {
+            data.allMarkdownRemark.edges.map((student, i)=> {
+              return (
+                <li key={i} className={style.studentcard}>
+                  <div className={style.profilepic} style={profilepicture}></div>
+                  <h2 className={style.studentname}>{student.node.frontmatter.name}</h2>
+                  <p className={style.jobtitle}>{student.node.frontmatter.program}</p>
+                  <p className={style.jobtitle}>{student.node.frontmatter.spot}</p>
+                  <p className={style.jobtitle}>{student.node.frontmatter.faves.join(', ')}</p>
+                  <Link to={`student/${student.node.fields.slug}`} type="button" className={style.btnpink}>View Student Profile</Link>
+                </li>
+              );
+            })
+          }
+
         </ul>
       </div>
     </Layout >

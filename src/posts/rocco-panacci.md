@@ -1,6 +1,8 @@
 ---
-name: "Humber Student"
-date: "July 29th, 2019"
+name: "Rocco Panacci"
+program: "Web Design & Development"
+spot: "WD1"
+faves: ["HTML", "CSS", "Javascript"]
 ---
 
 # This is Humber Student's profile
